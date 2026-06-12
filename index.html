@@ -5,31 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="한솔지 - OT 보안 제품 웹 콘솔을 개발해 온 Full-stack Web Developer 이력서"
+      content="한솔지 - 게으르기 위해 부지런한 Full-stack Web Developer"
     />
     <meta property="og:title" content="한솔지 | Full-stack Web Developer" />
     <meta
       property="og:description"
-      content="React, Next.js, TypeScript, Node.js 기반 OT 보안 제품 웹 콘솔 개발자"
+      content="게으르기 위해 부지런한 개발자. OT 보안 제품 웹 콘솔을 개발합니다."
     />
     <meta property="og:type" content="website" />
     <title>한솔지 | Full-stack Web Developer</title>
     <style>
       :root {
-        --bg: #f7f8fa;
-        --paper: #ffffff;
-        --text: #20242a;
-        --muted: #606975;
-        --line: #d8dde5;
-        --soft-line: #edf0f4;
-        --accent: #1b5fc1;
-        --accent-soft: #eaf2ff;
-        --security: #0f7b5f;
-        --security-soft: #e7f8f2;
-        --warning: #9a5b00;
-        --warning-soft: #fff5df;
-        --code: #eef2f7;
-        --shadow: 0 18px 50px rgba(24, 35, 52, 0.08);
+        --text: #241b2f;
+        --subtle: #6f647b;
+        --muted: #9a8aa9;
+        --line: #eadcf8;
+        --soft: #fbf7ff;
+        --accent: #7c3aed;
+        --accent-light: #f3edff;
       }
 
       * {
@@ -42,373 +35,266 @@
 
       body {
         margin: 0;
-        background: var(--bg);
         color: var(--text);
+        background: #ffffff;
         font-family:
           -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
           "Noto Sans KR", "Malgun Gothic", sans-serif;
-        line-height: 1.68;
+        font-size: 16px;
+        line-height: 1.78;
+        word-break: keep-all;
       }
 
       a {
         color: var(--accent);
         text-decoration: none;
+        border-bottom: 1px solid rgba(124, 58, 237, 0.28);
       }
 
       a:hover {
-        text-decoration: underline;
+        border-bottom-color: var(--accent);
       }
 
       .page {
-        max-width: 1080px;
+        width: min(100%, 820px);
         margin: 0 auto;
-        padding: 48px 24px 80px;
-      }
-
-      .sheet {
-        background: var(--paper);
-        border: 1px solid var(--line);
-        box-shadow: var(--shadow);
+        padding: 92px 28px 88px;
       }
 
       header {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 32px;
-        padding: 56px 56px 36px;
-        border-bottom: 1px solid var(--soft-line);
+        margin-bottom: 82px;
+        text-align: center;
       }
 
-      .eyebrow {
-        margin: 0 0 10px;
+      .hello {
+        margin: 0 0 18px;
         color: var(--accent);
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
+        letter-spacing: 0.04em;
       }
 
       h1,
       h2,
       h3,
+      h4,
+      h5,
       p {
         margin-top: 0;
       }
 
       h1 {
-        margin-bottom: 10px;
-        font-size: 44px;
+        margin-bottom: 22px;
+        font-size: clamp(42px, 7vw, 68px);
         line-height: 1.12;
-        letter-spacing: 0;
+        letter-spacing: -0.02em;
       }
 
-      .role {
-        margin: 0 0 22px;
-        color: var(--muted);
-        font-size: 20px;
-        font-weight: 600;
-      }
-
-      .summary {
-        max-width: 760px;
-        margin: 0;
-        font-size: 16px;
+      .lead {
+        max-width: 680px;
+        margin: 0 auto 30px;
+        color: #3a3a3a;
+        font-size: 19px;
+        line-height: 1.8;
       }
 
       .links {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-end;
-        gap: 8px;
-        align-content: flex-start;
+        justify-content: center;
+        gap: 16px;
+        color: var(--subtle);
+        font-size: 15px;
       }
 
-      .chip {
-        display: inline-flex;
-        align-items: center;
-        min-height: 34px;
-        padding: 6px 12px;
-        border: 1px solid var(--line);
-        border-radius: 999px;
-        color: var(--text);
-        font-size: 14px;
-        font-weight: 650;
-        white-space: nowrap;
-      }
-
-      main {
-        padding: 36px 56px 56px;
-      }
-
-      section + section {
-        margin-top: 44px;
+      section {
+        margin-top: 76px;
       }
 
       h2 {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        margin-bottom: 18px;
-        font-size: 22px;
+        margin-bottom: 26px;
+        font-size: 30px;
         line-height: 1.25;
-      }
-
-      h2::before {
-        content: "";
-        width: 6px;
-        height: 22px;
-        border-radius: 999px;
-        background: var(--accent);
+        letter-spacing: -0.01em;
       }
 
       h3 {
         margin-bottom: 6px;
-        font-size: 18px;
-        line-height: 1.35;
+        font-size: 24px;
+        line-height: 1.32;
+        letter-spacing: -0.01em;
       }
 
-      .muted {
-        color: var(--muted);
+      h4 {
+        margin: 34px 0 6px;
+        font-size: 20px;
+        line-height: 1.4;
       }
 
-      .highlights {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 14px;
-      }
-
-      .highlight {
-        padding: 18px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: #fbfcfe;
-      }
-
-      .highlight strong {
-        display: block;
-        margin-bottom: 8px;
-        font-size: 15px;
-      }
-
-      .highlight p {
-        margin: 0;
-        color: var(--muted);
+      h5 {
+        margin: 24px 0 8px;
+        color: var(--accent);
         font-size: 14px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
       }
 
-      .lineage {
-        padding: 20px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: #fbfcfe;
-        overflow-x: auto;
-      }
-
-      .lineage-grid {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(150px, 1fr));
-        gap: 14px;
-        min-width: 720px;
-      }
-
-      .node {
-        position: relative;
-        min-height: 92px;
-        padding: 16px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: var(--paper);
-      }
-
-      .node.primary {
-        border-color: #9bc4ff;
-        background: var(--accent-soft);
-      }
-
-      .node.security {
-        border-color: #98d9c3;
-        background: var(--security-soft);
-      }
-
-      .node.support {
-        border-color: #ffd48a;
-        background: var(--warning-soft);
-      }
-
-      .node h3 {
-        margin-bottom: 6px;
-        font-size: 15px;
-      }
-
-      .node p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 13px;
-        line-height: 1.5;
-      }
-
-      .span-2 {
-        grid-column: span 2;
-      }
-
-      .experience {
-        display: grid;
-        gap: 24px;
-      }
-
-      .company {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 16px;
-        align-items: baseline;
-        padding-bottom: 14px;
-        border-bottom: 1px solid var(--soft-line);
-      }
-
-      .company p {
-        margin: 4px 0 0;
-      }
-
-      .period {
-        color: var(--muted);
-        font-size: 14px;
-        white-space: nowrap;
-      }
-
-      .project {
-        padding-top: 2px;
-      }
-
-      .project-head {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 16px;
-        align-items: baseline;
-        margin-bottom: 8px;
-      }
-
-      .project-head p {
-        margin: 2px 0 0;
-        color: var(--muted);
-        font-size: 14px;
+      p {
+        margin-bottom: 14px;
       }
 
       ul {
-        margin: 8px 0 0;
-        padding-left: 20px;
+        margin: 0;
+        padding-left: 22px;
       }
 
       li + li {
-        margin-top: 6px;
+        margin-top: 8px;
       }
 
-      .tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
-        margin-top: 10px;
+      .meta {
+        margin-bottom: 18px;
+        color: var(--subtle);
+        font-size: 15px;
       }
 
-      .tag {
-        display: inline-flex;
-        padding: 4px 8px;
+      .company {
+        padding-bottom: 34px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .project {
+        padding: 34px 0 38px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .project:first-of-type {
+        padding-top: 8px;
+      }
+
+      .project:last-child {
+        border-bottom: 0;
+      }
+
+      .summary-list {
+        display: grid;
+        gap: 14px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .summary-list li {
+        padding-left: 16px;
+        border-left: 3px solid var(--accent);
+      }
+
+      .lineage-figure {
+        margin: 18px 0 0;
+        border: 1px solid var(--line);
         border-radius: 6px;
-        background: var(--code);
-        color: #3b4450;
-        font-size: 12px;
-        font-weight: 650;
+        background: var(--soft);
+        overflow: hidden;
+      }
+
+      .lineage-figure img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .lineage-caption {
+        margin: 0;
+        padding: 14px 18px 16px;
+        border-top: 1px solid var(--line);
+        color: var(--subtle);
+        font-size: 14px;
+      }
+
+      .stack {
+        color: var(--subtle);
       }
 
       .skills {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 14px;
+        gap: 22px;
       }
 
-      .skill-group {
-        padding: 16px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: #fbfcfe;
+      .skill-row {
+        display: grid;
+        grid-template-columns: 190px 1fr;
+        gap: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid var(--line);
       }
 
-      .skill-group h3 {
-        font-size: 15px;
-      }
-
-      .skill-group p {
+      .skill-row h3 {
         margin: 0;
-        color: var(--muted);
-        font-size: 14px;
+        color: var(--accent);
+        font-size: 16px;
+      }
+
+      .skill-row p {
+        margin: 0;
+        color: var(--subtle);
       }
 
       .note {
-        padding: 14px 16px;
-        border-left: 4px solid var(--security);
-        background: var(--security-soft);
-        color: #174d40;
-        font-size: 14px;
+        padding: 20px 22px;
+        border-left: 4px solid var(--accent);
+        background: var(--accent-light);
+        color: #31443a;
       }
 
       footer {
-        padding: 24px 56px;
-        border-top: 1px solid var(--soft-line);
+        margin-top: 86px;
+        padding-top: 24px;
+        border-top: 1px solid var(--line);
         color: var(--muted);
-        font-size: 13px;
+        font-size: 14px;
+        text-align: center;
       }
 
-      @media (max-width: 820px) {
+      @media (max-width: 720px) {
+        body {
+          font-size: 15px;
+        }
+
         .page {
-          padding: 0;
-        }
-
-        .sheet {
-          border-width: 0;
-          box-shadow: none;
-        }
-
-        header,
-        main,
-        footer {
-          padding-left: 24px;
-          padding-right: 24px;
+          padding: 58px 22px 64px;
         }
 
         header {
-          grid-template-columns: 1fr;
-          padding-top: 36px;
+          margin-bottom: 62px;
         }
 
         h1 {
-          font-size: 34px;
+          font-size: 42px;
         }
 
-        .links {
-          justify-content: flex-start;
+        .lead {
+          font-size: 17px;
         }
 
-        .highlights,
-        .skills {
+        section {
+          margin-top: 56px;
+        }
+
+        h2 {
+          font-size: 26px;
+        }
+
+        h3 {
+          font-size: 22px;
+        }
+
+        .skill-row {
           grid-template-columns: 1fr;
-        }
-
-        .company,
-        .project-head {
-          grid-template-columns: 1fr;
-          gap: 4px;
+          gap: 6px;
         }
       }
 
       @media print {
-        :root {
-          --bg: #ffffff;
-          --paper: #ffffff;
-          --text: #111111;
-          --muted: #444444;
-          --line: #cccccc;
-          --soft-line: #dddddd;
-        }
-
         body {
           background: #ffffff;
           font-size: 11px;
@@ -416,429 +302,373 @@
         }
 
         .page {
-          max-width: none;
+          width: auto;
           padding: 0;
         }
 
-        .sheet {
-          border: 0;
-          box-shadow: none;
-        }
-
-        header,
-        main,
-        footer {
-          padding-left: 0;
-          padding-right: 0;
-        }
-
         header {
-          padding-top: 0;
+          margin-bottom: 32px;
         }
 
         h1 {
-          font-size: 30px;
+          font-size: 32px;
         }
 
         h2 {
-          font-size: 17px;
+          font-size: 20px;
           break-after: avoid;
         }
 
         h3,
-        .project-head,
-        .company {
+        h4,
+        h5 {
           break-after: avoid;
         }
 
-        .highlight,
-        .skill-group,
-        .node,
-        .project {
+        .project,
+        .skill-row,
+        .note {
           break-inside: avoid;
         }
 
-        .chip,
-        .tag {
-          border-color: #bbbbbb;
-          background: #ffffff;
+        a {
+          color: #222222;
+          border-bottom: 0;
         }
       }
     </style>
   </head>
   <body>
-    <div class="page">
-      <article class="sheet">
-        <header>
-          <div>
-            <p class="eyebrow">OT Security · Web Console · Full-stack</p>
-            <h1>한솔지</h1>
-            <p class="role">Full-stack Web Developer</p>
-            <p class="summary">
-              NAONWORKS에서 약 4년 반 동안 OT 보안 제품의 웹 관리 콘솔을
-              개발했습니다. React, Next.js, TypeScript, Node.js 기반으로
-              대시보드, 자산·토폴로지, 탐지·정책, 로그·리포트, 인증·권한,
-              시스템 관리 기능을 프론트엔드부터 API, DB 마이그레이션까지
-              구현·운영했습니다.
+    <main class="page">
+      <header>
+        <p class="hello">반갑습니다, 저는 한솔지입니다.</p>
+        <h1>게으르기 위해<br />부지런한 개발자</h1>
+        <p class="lead">
+          반복되는 일을 줄이고, 사람이 덜 신경 써도 되는 구조를 만드는 데 관심이
+          많습니다. NAONWORKS에서 약 4년 반 동안 OT 보안 제품의 웹 관리 콘솔을
+          만들며 프론트엔드 구조 개선, 인증·취약점 대응, API와 DB
+          마이그레이션까지 함께 다뤘습니다.
+        </p>
+        <nav class="links" aria-label="contact links">
+          <a href="https://github.com/ddoddi-han">GitHub</a>
+          <a href="https://hsj6660.tistory.com/">Blog</a>
+          <a href="https://ddoddi-han.github.io">Resume</a>
+        </nav>
+      </header>
+
+      <section aria-labelledby="about">
+        <h2 id="about">About.</h2>
+        <ul class="summary-list">
+          <li>
+            React, Next.js, TypeScript, Node.js 기반으로 보안 장비의 대시보드,
+            자산·토폴로지, 탐지·정책, 로그·리포트, 인증·권한, 시스템 관리 기능을
+            구현했습니다.
+          </li>
+          <li>
+            XTD V1부터 V3까지 제품을 이어서 개발했고, V2 Page Router 구조를
+            Next.js App Router 기반 V3 구조로 재구축했습니다.
+          </li>
+          <li>
+            GS 인증, CC 인증, 중국 공안 인증, ISO 27001 심사 준비,
+            AppScan/Acunetix 웹 취약점 점검에 대응했습니다.
+          </li>
+          <li>
+            XTD V3에서 아쉬웠던 다국어·타입·상수·검증 중복 문제를 VIPER의
+            monorepo/shared package 구조에 반영했습니다.
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="lineage">
+        <h2 id="lineage">Product Lineage.</h2>
+        <p>
+          프로젝트 간 분기와 통합 과정을 중심으로, 지난 4년 반의 개발 경험을
+          타임라인으로 구성했습니다.
+        </p>
+        <figure class="lineage-figure">
+          <img
+            src="./project-lineage-sjhan.svg"
+            alt="XTD V1부터 XTD V3, DPS, SMR, VIPER, DD로 이어지는 제품 계보와 타임라인"
+          />
+        </figure>
+      </section>
+
+      <section aria-labelledby="experience">
+        <h2 id="experience">Work Experience.</h2>
+
+        <article class="company">
+          <h3>NAONWORKS.</h3>
+          <p class="meta">Full-stack Web Developer · 2022.03 - 현재</p>
+          <p>
+            OT/ICS 네트워크 보안, VoIP 보안 장비, Data Diode, Secure Agent 등
+            산업용 보안 제품의 웹 관리 콘솔을 개발했습니다. 제품 특성상
+            인증·권한, 운영 감사 로그, 보안성 심사, 취약점 개선, 장비 운영
+            안정성이 중요했고, 주요 화면과 API, DB migration, 외부 협업 브랜치
+            병합까지 폭넓게 수행했습니다.
+          </p>
+        </article>
+
+        <article class="project">
+          <h4>XTD V1-V3 OT 보안 모니터링 콘솔.</h4>
+          <p class="meta">2022.03 - 현재</p>
+
+          <h5>Description.</h5>
+          <p>
+            OT 보안 모니터링 제품의 로그인, 권한, 대시보드, 토폴로지,
+            자산·서비스·세션 가시성, 보안정책, 로그·리포트, 시스템 관리 화면을
+            개발했습니다. V1부터 V3까지 이어서 개발한 주력 제품입니다.
+          </p>
+
+          <h5>What did I do.</h5>
+          <ul>
+            <li>
+              2명 규모로 약 2개월 동안 V2 계열 Page Router 프론트엔드를 Next.js
+              App Router 기반 V3 구조로 재구축했습니다.
+            </li>
+            <li>
+              route group, layout/provider, TanStack Query, 검색·테이블·모달·폼
+              패턴을 표준화해 신규 화면 개발 구조를 단순화했습니다.
+            </li>
+            <li>
+              Next custom server를 구성하고 WebSocket 기반 실시간 갱신을 SSE로
+              전환했습니다. 다중 탭 환경의 HTTP/1.1 연결 수 제한 문제는 HTTP/2
+              edge proxy와 내부 H1.1 분리 구조로 해결했습니다.
+            </li>
+            <li>
+              AppScan/Acunetix 점검에서 2024-07-10 기준 상 6건·중 4건이던 취약점
+              결과를 2024-08-05 기준 상 0건·중 0건으로 낮췄습니다.
+            </li>
+            <li>
+              태그 관련 시계열 데이터를 Redis 기반 조회에서 InfluxDB 기반 조회로
+              전환하고, 제품 버전 상승에 맞춰 DB migration을 작성했습니다.
+            </li>
+          </ul>
+
+          <h5>Tech Stack.</h5>
+          <p class="stack">
+            TypeScript, React, Next.js, App Router, Node.js, Express, MariaDB,
+            InfluxDB, Redis, TanStack Query, SSE, HTTP/2 proxy
+          </p>
+        </article>
+
+        <article class="project">
+          <h4>SMR 국가과제 보안 모니터링 콘솔.</h4>
+          <p class="meta">2025.05 - 현재</p>
+
+          <h5>Description.</h5>
+          <p>
+            XTD V3에서 분기한 국가과제 제품입니다. Secure Agent, 안전등급
+            제어기기(COMX), Data Diode, DD 연동 기능이 포함되어 있습니다.
+          </p>
+
+          <h5>What did I do.</h5>
+          <ul>
+            <li>
+              Secure Agent, COMX, Data Diode 자산을 테이블 설계, API, 화면, 상세
+              모달, 로그, 대시보드 위젯까지 풀스택으로 구현했습니다.
+            </li>
+            <li>
+              DD 제품과의 연동 요구사항을 반영해 Data Diode 자산·상태·로그를 SMR
+              콘솔에서 조회하고 운영할 수 있도록 화면과 API 흐름을 구성했습니다.
+            </li>
+            <li>
+              리팩토링된 XTD V3 구조에 맞춰 SMR 브랜치를 병합하고,
+              develop/smr-develop 간 메뉴, i18n, AssetInfo, 빌드 오류, 제품별
+              분기 충돌을 정리했습니다.
+            </li>
+          </ul>
+
+          <h5>Tech Stack.</h5>
+          <p class="stack">
+            TypeScript, React, Next.js, Node.js, Express, MariaDB, Branch
+            Integration
+          </p>
+        </article>
+
+        <article class="project">
+          <h4>VIPER VoIP 보안장비 관리 콘솔.</h4>
+          <p class="meta">2025.11 - 현재</p>
+
+          <h5>Description.</h5>
+          <p>
+            XTD V3 리팩토링에서 확인한 구조적 아쉬움을 신규 제품에 반영한 VoIP
+            보안장비 관리 콘솔입니다.
+          </p>
+
+          <h5>What did I do.</h5>
+          <ul>
+            <li>
+              pnpm workspace 기반 monorepo 구조를 구성하고, frontend/backend
+              공통 다국어 key, 타입, enum, 상수, IP 검증 유틸을 shared package로
+              분리했습니다.
+            </li>
+            <li>
+              backend에도 Zod 기반 allowlist validation을 적용해 허용된
+              parameter만 처리하도록 제한하고, 서버 검증 에러를 react-hook-form
+              필드 에러로 연결했습니다.
+            </li>
+            <li>
+              desktop/mobile 메뉴, sidebar, modal, login/register 화면을 구현해
+              반응형 요구사항을 초기 구조에 반영했습니다.
+            </li>
+            <li>
+              JWT 발급·갱신, 토큰·허용 IP·권한 검증, 계정 잠금, 감사 로그,
+              민감정보 마스킹, CC 인증 모드와 인증서 관리 화면을 구현했습니다.
+            </li>
+          </ul>
+
+          <h5>Tech Stack.</h5>
+          <p class="stack">
+            TypeScript, React 19, Tailwind CSS v4, shadcn/Radix UI, Zod,
+            Zustand, react-hook-form, Node.js, Express, pnpm workspace
+          </p>
+        </article>
+
+        <article class="project">
+          <h4>DPS / TOD-DPI OT DPI 보안정책 콘솔.</h4>
+          <p class="meta">2022.03 - 2024.02</p>
+
+          <h5>Description.</h5>
+          <p>
+            XTD 레거시 코드에서 브랜치를 분기해 개발한 OT DPI 보안정책
+            제품입니다. TIG-KOREA에서는 TOD-DPI 제품명으로 소개되어 있고, 개발은
+            NAONWORKS에서 수행했습니다.
+          </p>
+
+          <h5>What did I do.</h5>
+          <ul>
+            <li>
+              DNP3, Modbus 등 OT/ICS 산업용 프로토콜 제어명령의 탐지·차단 정책
+              화면을 개발했습니다.
+            </li>
+            <li>
+              대시보드, 탐지로그, 제어명령 통제 정책, 5-tuple 기반 일반 보안정책
+              화면과 API/DB 흐름을 구현했습니다.
+            </li>
+            <li>
+              Highcharts 기반 차트, PDF/Excel 내보내기, 대용량 리포트 처리, 제품
+              버전별 DB migration을 구현했습니다.
+            </li>
+          </ul>
+
+          <h5>Tech Stack.</h5>
+          <p class="stack">
+            React, Next.js, Node.js, MariaDB, Highcharts, OT/ICS, DPI, DNP3,
+            Modbus
+          </p>
+        </article>
+
+        <article class="project">
+          <h4>Playwright 웹 응답 성능 시험 자동화.</h4>
+          <p class="meta">2025.09</p>
+
+          <h5>Description.</h5>
+          <p>
+            수동 반복 측정이 필요하던 웹 응답 성능 시험을 자동화해 동일 조건의
+            결과를 산출할 수 있도록 만들었습니다.
+          </p>
+
+          <h5>What did I do.</h5>
+          <ul>
+            <li>
+              주요 화면 25개 URL을 10회씩 반복 측정하고, Navigation Timing API의
+              loadEventEnd를 수집해 평균 응답 시간을 계산했습니다.
+            </li>
+            <li>
+              ExcelJS로 회차별 측정값과 평균값을 포함한 .xlsx 결과 파일을 자동
+              생성해 수동 반복 측정 업무를 줄였습니다.
+            </li>
+          </ul>
+
+          <h5>Tech Stack.</h5>
+          <p class="stack">
+            Playwright, TypeScript, ExcelJS, Navigation Timing API
+          </p>
+        </article>
+
+        <article class="project">
+          <h4>DD 산업용 보안 어플라이언스 웹 콘솔.</h4>
+          <p class="meta">2023.11 - 2024.11</p>
+
+          <h5>Description.</h5>
+          <p>
+            Vue/Kotlin 기반 제품 개발을 잠깐 맡았던 보조 경험입니다. 이력서의
+            중심은 React/Next.js 기반 OT 보안 제품 경험에 둡니다.
+          </p>
+
+          <h5>What did I do.</h5>
+          <ul>
+            <li>
+              네트워크 설정, ODM/화이트라벨, 권한 제어 기능을 구현했습니다.
+            </li>
+            <li>
+              라우팅, 본딩, 인터페이스 설정 기능과 CIDR·넷마스크 검증, 직접 URL
+              접근 제어, 시스템 시간 변경 시 강제 로그아웃 로직을 구현했습니다.
+            </li>
+          </ul>
+
+          <h5>Tech Stack.</h5>
+          <p class="stack">
+            Vue 3, Quasar, TypeScript, Kotlin, Spring Boot WebFlux
+          </p>
+        </article>
+      </section>
+
+      <section aria-labelledby="skills">
+        <h2 id="skills">Skills.</h2>
+        <div class="skills">
+          <div class="skill-row">
+            <h3>Core Frontend.</h3>
+            <p>
+              TypeScript, React 17-19, Next.js 12-15, App Router, Tailwind CSS
+              v4, shadcn/Radix UI, TanStack Query, Zustand, react-hook-form, Zod
             </p>
           </div>
-          <nav class="links" aria-label="contact links">
-            <a class="chip" href="https://github.com/ddoddi-han">GitHub</a>
-            <a class="chip" href="https://hsj6660.tistory.com/">Blog</a>
-            <a class="chip" href="https://ddoddi-han.github.io">GitHub Pages</a>
-          </nav>
-        </header>
-
-        <main>
-          <section aria-labelledby="highlights">
-            <h2 id="highlights">Highlights</h2>
-            <div class="highlights">
-              <div class="highlight">
-                <strong>XTD V1-V3 지속 개발</strong>
-                <p>
-                  입사 초기부터 XTD 웹 콘솔을 개발하고, V2 Page Router 구조를
-                  Next.js App Router 기반 V3 구조로 재구축했습니다.
-                </p>
-              </div>
-              <div class="highlight">
-                <strong>웹 취약점 상·중 항목 0건화</strong>
-                <p>
-                  AppScan/Acunetix 점검에서 상 6건·중 4건이던 취약점을
-                  2024-08-05 기준 상 0건·중 0건으로 낮췄습니다.
-                </p>
-              </div>
-              <div class="highlight">
-                <strong>리팩토링 경험을 신규 제품에 반영</strong>
-                <p>
-                  XTD V3에서 확인한 공통 타입·상수·검증 중복 문제를 VIPER의
-                  monorepo/shared package 설계로 개선했습니다.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section aria-labelledby="lineage">
-            <h2 id="lineage">Product Lineage</h2>
-            <div class="lineage">
-              <div class="lineage-grid" aria-label="project lineage diagram">
-                <div class="node primary">
-                  <h3>XTD V1</h3>
-                  <p>OT 보안 모니터링 콘솔 초기 개발</p>
-                </div>
-                <div class="node primary">
-                  <h3>XTD V2</h3>
-                  <p>기능 확장, 인증·취약점 대응, 운영 안정성 개선</p>
-                </div>
-                <div class="node primary">
-                  <h3>XTD V3</h3>
-                  <p>App Router 리팩토링, SSE, HTTP/2 edge proxy</p>
-                </div>
-                <div class="node security">
-                  <h3>VIPER</h3>
-                  <p>XTD V3 회고를 반영한 monorepo/shared 구조</p>
-                </div>
-                <div class="node support span-2">
-                  <h3>DPS / TOD-DPI</h3>
-                  <p>
-                    XTD 레거시 코드에서 분기한 OT DPI 보안정책 제품.
-                    XTD V3 구조 병합 준비 대상
-                  </p>
-                </div>
-                <div class="node security span-2">
-                  <h3>SMR 국가과제</h3>
-                  <p>
-                    XTD V3에서 분기. Secure Agent, COMX, Data Diode, DD 연동
-                    도메인 구현
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section aria-labelledby="experience">
-            <h2 id="experience">Experience</h2>
-            <div class="experience">
-              <div class="company">
-                <div>
-                  <h3>NAONWORKS</h3>
-                  <p class="muted">
-                    OT/ICS 네트워크 보안, VoIP 보안 장비, Data Diode, Secure
-                    Agent 등 산업용 보안 제품의 웹 관리 콘솔 개발
-                  </p>
-                </div>
-                <span class="period">2022.03 - 현재</span>
-              </div>
-
-              <section class="project" aria-labelledby="xtd">
-                <div class="project-head">
-                  <div>
-                    <h3 id="xtd">XTD V1-V3 OT 보안 모니터링 콘솔</h3>
-                    <p>
-                      로그인, 권한, 대시보드, 토폴로지, 자산·서비스·세션
-                      가시성, 보안정책, 로그·리포트, 시스템 관리
-                    </p>
-                  </div>
-                  <span class="period">2022.03 - 현재</span>
-                </div>
-                <ul>
-                  <li>
-                    2명 규모로 약 2개월 동안 V2 계열 Page Router 프론트엔드를
-                    Next.js App Router 기반 V3 구조로 재구축하고, route group,
-                    layout/provider, TanStack Query, 검색·테이블·모달·폼
-                    패턴을 표준화했습니다.
-                  </li>
-                  <li>
-                    Next custom server를 구성하고 WebSocket 기반 실시간 갱신을
-                    SSE로 전환했습니다. 다중 탭 환경의 HTTP/1.1 연결 수 제한
-                    문제는 HTTP/2 edge proxy와 내부 H1.1 분리 구조로
-                    해결했습니다.
-                  </li>
-                  <li>
-                    GS 인증, 중국 공안 인증, ISO 27001 심사 준비,
-                    AppScan/Acunetix 취약점 점검에 대응하며 입력값 검증,
-                    보안 헤더, TLS cipher suite, XSS, API 대량 할당,
-                    Cross-Site WebSocket Hijacking 항목을 개선했습니다.
-                  </li>
-                  <li>
-                    2024-07-10 기준 상 6건·중 4건이던 웹 취약점 결과를
-                    2024-08-05 기준 상 0건·중 0건으로 낮췄습니다.
-                  </li>
-                  <li>
-                    태그 관련 시계열 데이터를 Redis 기반 조회에서 InfluxDB 기반
-                    조회로 전환하고, 제품 버전 상승에 맞춰 DB migration을
-                    작성했습니다.
-                  </li>
-                </ul>
-                <div class="tags">
-                  <span class="tag">Next.js</span>
-                  <span class="tag">App Router</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">Node.js</span>
-                  <span class="tag">SSE</span>
-                  <span class="tag">HTTP/2</span>
-                  <span class="tag">MariaDB</span>
-                  <span class="tag">InfluxDB</span>
-                </div>
-              </section>
-
-              <section class="project" aria-labelledby="smr">
-                <div class="project-head">
-                  <div>
-                    <h3 id="smr">SMR 국가과제 보안 모니터링 콘솔</h3>
-                    <p>XTD V3에서 분기한 국가과제 제품</p>
-                  </div>
-                  <span class="period">2025.05 - 현재</span>
-                </div>
-                <ul>
-                  <li>
-                    Secure Agent, 안전등급 제어기기(COMX), Data Diode 연동
-                    도메인을 테이블 설계, API, 화면, 상세 모달, 로그,
-                    대시보드 위젯까지 풀스택으로 구현했습니다.
-                  </li>
-                  <li>
-                    DD 제품과의 연동 요구사항을 반영해 Data Diode 자산·상태·로그를
-                    SMR 콘솔에서 조회하고 운영할 수 있도록 화면과 API 흐름을
-                    구성했습니다.
-                  </li>
-                  <li>
-                    리팩토링된 XTD V3 구조에 맞춰 SMR 브랜치를 병합하고,
-                    develop/smr-develop 간 메뉴, i18n, AssetInfo, 빌드 오류,
-                    제품별 분기 충돌을 정리했습니다.
-                  </li>
-                </ul>
-                <div class="tags">
-                  <span class="tag">React</span>
-                  <span class="tag">Next.js</span>
-                  <span class="tag">Node.js</span>
-                  <span class="tag">MariaDB</span>
-                  <span class="tag">Branch Integration</span>
-                </div>
-              </section>
-
-              <section class="project" aria-labelledby="viper">
-                <div class="project-head">
-                  <div>
-                    <h3 id="viper">VIPER VoIP 보안장비 관리 콘솔</h3>
-                    <p>
-                      XTD V3 리팩토링에서 확인한 구조적 아쉬움을 신규 제품에
-                      반영
-                    </p>
-                  </div>
-                  <span class="period">2025.11 - 현재</span>
-                </div>
-                <ul>
-                  <li>
-                    pnpm workspace 기반 monorepo(frontend/backend/proxy/shared)
-                    구조를 구성하고, frontend/backend 공통 다국어 key, 타입,
-                    enum, 상수, IP 검증 유틸을 shared package로 분리했습니다.
-                  </li>
-                  <li>
-                    backend에도 Zod 기반 allowlist validation을 적용해 허용된
-                    parameter만 처리하도록 제한하고, 서버 검증 에러를
-                    react-hook-form 필드 에러로 연결했습니다.
-                  </li>
-                  <li>
-                    desktop/mobile 메뉴, sidebar, modal, login/register 화면을
-                    구현해 반응형 요구사항을 초기 구조에 반영했습니다.
-                  </li>
-                  <li>
-                    JWT 발급·갱신, 토큰·허용 IP·권한 검증, 계정 잠금, 감사 로그,
-                    민감정보 마스킹, CC 인증 모드와 인증서 관리 화면을 구현했습니다.
-                  </li>
-                </ul>
-                <div class="tags">
-                  <span class="tag">React 19</span>
-                  <span class="tag">Tailwind CSS v4</span>
-                  <span class="tag">shadcn/Radix</span>
-                  <span class="tag">react-hook-form</span>
-                  <span class="tag">Zod</span>
-                  <span class="tag">Zustand</span>
-                </div>
-              </section>
-
-              <section class="project" aria-labelledby="dps">
-                <div class="project-head">
-                  <div>
-                    <h3 id="dps">DPS / TOD-DPI OT DPI 보안정책 콘솔</h3>
-                    <p>
-                      TIG-KOREA에서 TOD-DPI 제품명으로 소개되는 OT DPI 보안정책
-                      제품. 개발은 NAONWORKS에서 수행
-                    </p>
-                  </div>
-                  <span class="period">2022.03 - 2024.02</span>
-                </div>
-                <ul>
-                  <li>
-                    XTD 레거시 코드에서 브랜치를 분기해 DPS 웹 콘솔을 구축하고,
-                    DNP3, Modbus 등 OT/ICS 산업용 프로토콜 제어명령의
-                    탐지·차단 정책 화면을 개발했습니다.
-                  </li>
-                  <li>
-                    대시보드, 탐지로그, 제어명령 통제 정책, 5-tuple 기반 일반
-                    보안정책 화면과 API/DB 흐름을 구현했습니다.
-                  </li>
-                  <li>
-                    Highcharts 기반 차트, PDF/Excel 내보내기, 대용량 리포트 처리,
-                    제품 버전별 DB migration을 구현했습니다.
-                  </li>
-                </ul>
-                <div class="tags">
-                  <span class="tag">OT/ICS</span>
-                  <span class="tag">DPI</span>
-                  <span class="tag">DNP3</span>
-                  <span class="tag">Modbus</span>
-                  <span class="tag">Highcharts</span>
-                </div>
-              </section>
-
-              <section class="project" aria-labelledby="automation">
-                <div class="project-head">
-                  <div>
-                    <h3 id="automation">Playwright 웹 응답 성능 시험 자동화</h3>
-                    <p>반복 측정 업무를 자동화해 동일 조건의 성능 결과를 산출</p>
-                  </div>
-                  <span class="period">2025.09</span>
-                </div>
-                <ul>
-                  <li>
-                    주요 화면 25개 URL을 10회씩 반복 측정하고, Navigation Timing
-                    API의 loadEventEnd를 수집해 평균 응답 시간을 계산했습니다.
-                  </li>
-                  <li>
-                    ExcelJS로 회차별 측정값과 평균값을 포함한 .xlsx 결과 파일을
-                    자동 생성해 수동 반복 측정 업무를 줄였습니다.
-                  </li>
-                </ul>
-                <div class="tags">
-                  <span class="tag">Playwright</span>
-                  <span class="tag">ExcelJS</span>
-                  <span class="tag">Performance Test</span>
-                </div>
-              </section>
-
-              <section class="project" aria-labelledby="dd">
-                <div class="project-head">
-                  <div>
-                    <h3 id="dd">DD 산업용 보안 어플라이언스 웹 콘솔</h3>
-                    <p>Vue/Kotlin 기반 보조 개발 경험</p>
-                  </div>
-                  <span class="period">2023.11 - 2024.11</span>
-                </div>
-                <ul>
-                  <li>
-                    Vue 3, Quasar, TypeScript 프론트엔드와 Kotlin, Spring Boot
-                    WebFlux, jOOQ, R2DBC 백엔드 기반 웹 콘솔에서 네트워크 설정,
-                    ODM/화이트라벨, 권한 제어 기능을 구현했습니다.
-                  </li>
-                  <li>
-                    라우팅, 본딩, 인터페이스 설정 기능과 CIDR·넷마스크 검증,
-                    직접 URL 접근 제어, 시스템 시간 변경 시 강제 로그아웃 로직을
-                    구현했습니다.
-                  </li>
-                </ul>
-                <div class="tags">
-                  <span class="tag">Vue 3</span>
-                  <span class="tag">Quasar</span>
-                  <span class="tag">Kotlin</span>
-                  <span class="tag">Spring Boot WebFlux</span>
-                </div>
-              </section>
-            </div>
-          </section>
-
-          <section aria-labelledby="skills">
-            <h2 id="skills">Skills</h2>
-            <div class="skills">
-              <div class="skill-group">
-                <h3>Core Frontend</h3>
-                <p>
-                  TypeScript, React 17-19, Next.js 12-15, App Router, Tailwind
-                  CSS v4, shadcn/Radix UI, TanStack Query, Zustand,
-                  react-hook-form, Zod
-                </p>
-              </div>
-              <div class="skill-group">
-                <h3>Backend & Database</h3>
-                <p>
-                  Node.js, Express, JWT, Passport, MariaDB/MySQL, Sequelize,
-                  Kysely, raw SQL, InfluxDB, Redis, DB migration
-                </p>
-              </div>
-              <div class="skill-group">
-                <h3>Security & Operations</h3>
-                <p>
-                  SSE, WebSocket, HTTP/2 proxy, CSP, security headers, TLS
-                  cipher suite, AES-256-CBC/PBKDF2, audit log masking,
-                  SonarQube secure coding
-                </p>
-              </div>
-              <div class="skill-group">
-                <h3>Visualization & Testing</h3>
-                <p>
-                  Highcharts, Cytoscape, sigma.js/graphology, Chart.js,
-                  react-grid-layout, Playwright, Jest, supertest, ExcelJS
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section aria-labelledby="collaboration">
-            <h2 id="collaboration">Collaboration</h2>
-            <p class="note">
-              AhnLab 및 외주업체와 공동 개발하며 ODM/화이트라벨, 다국어 도움말,
-              인증서·약관, 제품별 브랜치 병합과 버전 동기화를 수행했습니다.
-              외부 조직 브랜치의 수정사항을 공통 코드베이스에 반영하면서
-              제품별 요구사항과 인증 대응 범위를 함께 관리했습니다.
+          <div class="skill-row">
+            <h3>Backend & Database.</h3>
+            <p>
+              Node.js, Express, JWT, Passport, MariaDB/MySQL, Sequelize, Kysely,
+              raw SQL, InfluxDB, Redis, DB migration
             </p>
-          </section>
-        </main>
+          </div>
+          <div class="skill-row">
+            <h3>Security.</h3>
+            <p>
+              GS/CC/중국 공안 인증 대응, ISO 27001 심사 준비, AppScan/Acunetix
+              취약점 개선, CSP, security headers, TLS cipher suite, SonarQube
+              secure coding, audit log masking
+            </p>
+          </div>
+          <div class="skill-row">
+            <h3>Visualization & Test.</h3>
+            <p>
+              Highcharts, Cytoscape, sigma.js/graphology, Chart.js,
+              react-grid-layout, Playwright, Jest, supertest, ExcelJS
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <footer>
-          <span>Last updated: 2026.06</span>
-          <span> · </span>
-          <a href="https://github.com/ddoddi-han">github.com/ddoddi-han</a>
-        </footer>
-      </article>
-    </div>
+      <section aria-labelledby="collaboration">
+        <h2 id="collaboration">Collaboration.</h2>
+        <p class="note">
+          AhnLab 및 외주업체와 공동 개발하며 ODM/화이트라벨, 다국어 도움말,
+          인증서·약관, 제품별 브랜치 병합과 버전 동기화를 수행했습니다. 외부
+          조직 브랜치의 수정사항을 공통 코드베이스에 반영하면서 제품별
+          요구사항과 인증 대응 범위를 함께 관리했습니다.
+        </p>
+      </section>
+
+      <section aria-labelledby="contact">
+        <h2 id="contact">Contact.</h2>
+        <ul>
+          <li><a href="https://github.com/ddoddi-han">GitHub</a></li>
+          <li><a href="https://hsj6660.tistory.com/">Blog</a></li>
+          <li><a href="https://ddoddi-han.github.io">Resume</a></li>
+        </ul>
+      </section>
+
+      <footer>Last updated: 2026.06</footer>
+    </main>
   </body>
 </html>

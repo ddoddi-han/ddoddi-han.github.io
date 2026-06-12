@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 760" role="img" aria-labelledby="title desc">
+  <title id="title">한솔지 프로젝트 계보 타임라인</title>
+  <desc id="desc">제품별 세로 타임라인으로 XTD V1, V2, V3에서 DPS와 SMR이 분기되고, XTD V3 회고가 VIPER 설계로 이어지는 흐름을 표현한 다이어그램</desc>
+  <defs>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b5cf6" />
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b" />
+    </marker>
+    <filter id="softShadow" x="-12%" y="-12%" width="124%" height="138%">
+      <feDropShadow dx="0" dy="9" stdDeviation="11" flood-color="#5b21b6" flood-opacity="0.10" />
+    </filter>
+  </defs>
+
+  <rect width="1180" height="760" rx="20" fill="#ffffff" />
+  <text x="56" y="58" fill="#241b2f" font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif" font-size="30" font-weight="800">프로젝트 계보</text>
+  <text x="56" y="88" fill="#7e7190" font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif" font-size="15">시간은 위에서 아래로 흐르고, 각 제품은 별도의 세로 라인으로 이어집니다.</text>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif">
+    <text x="72" y="124" fill="#7c3aed" font-size="14" font-weight="800">TIME</text>
+    <text x="252" y="124" fill="#5b21b6" font-size="14" font-weight="800" text-anchor="middle">XTD</text>
+    <text x="430" y="124" fill="#5b21b6" font-size="14" font-weight="800" text-anchor="middle">DPS</text>
+    <text x="610" y="124" fill="#9a6b33" font-size="14" font-weight="800" text-anchor="middle">DD</text>
+    <text x="790" y="124" fill="#5b21b6" font-size="14" font-weight="800" text-anchor="middle">SMR</text>
+    <text x="990" y="124" fill="#5b21b6" font-size="14" font-weight="800" text-anchor="middle">VIPER</text>
+  </g>
+
+  <g stroke="#efe7fb" stroke-width="1">
+    <line x1="56" y1="150" x2="1120" y2="150" />
+    <line x1="56" y1="285" x2="1120" y2="285" />
+    <line x1="56" y1="330" x2="1120" y2="330" />
+    <line x1="56" y1="420" x2="1120" y2="420" />
+    <line x1="56" y1="455" x2="1120" y2="455" />
+    <line x1="56" y1="540" x2="1120" y2="540" />
+    <line x1="56" y1="630" x2="1120" y2="630" />
+    <line x1="56" y1="700" x2="1120" y2="700" />
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif" fill="#7e7190" font-size="13">
+    <text x="72" y="154">2022.03</text>
+    <text x="72" y="289">2023.11</text>
+    <text x="72" y="334">2024.02</text>
+    <text x="72" y="424">2024.11</text>
+    <text x="72" y="459">2024.12</text>
+    <text x="72" y="544">2025.05</text>
+    <text x="72" y="634">2025.11</text>
+    <text x="72" y="704">2026.06</text>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="252" y1="150" x2="252" y2="700" stroke="#7c3aed" stroke-width="9" />
+    <line x1="430" y1="150" x2="430" y2="330" stroke="#a855f7" stroke-width="8" />
+    <line x1="430" y1="330" x2="430" y2="700" stroke="#c084fc" stroke-width="5" stroke-dasharray="10 10" />
+    <line x1="610" y1="285" x2="610" y2="420" stroke="#f59e0b" stroke-width="7" />
+    <line x1="790" y1="540" x2="790" y2="700" stroke="#9333ea" stroke-width="8" />
+    <line x1="990" y1="630" x2="990" y2="700" stroke="#8b5cf6" stroke-width="8" />
+
+    <path d="M 252 150 C 300 150, 350 150, 430 150" stroke="#a855f7" stroke-width="3" marker-end="url(#arrow-purple)" />
+    <path d="M 252 540 C 420 540, 610 540, 790 540" stroke="#9333ea" stroke-width="3" marker-end="url(#arrow-purple)" />
+    <path d="M 610 420 C 640 470, 700 520, 790 540" stroke="#f59e0b" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arrow-amber)" />
+    <path d="M 430 700 C 370 700, 310 700, 252 700" stroke="#c084fc" stroke-width="3" stroke-dasharray="9 8" marker-end="url(#arrow-purple)" />
+  </g>
+
+  <g filter="url(#softShadow)" font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif">
+    <rect x="178" y="162" width="148" height="56" rx="12" fill="#f3edff" stroke="#c4b5fd" />
+    <text x="252" y="188" text-anchor="middle" fill="#241b2f" font-size="17" font-weight="800">XTD V1</text>
+    <text x="252" y="205" text-anchor="middle" fill="#7e7190" font-size="12">초기 개발</text>
+
+    <rect x="178" y="300" width="148" height="56" rx="12" fill="#f3edff" stroke="#c4b5fd" />
+    <text x="252" y="326" text-anchor="middle" fill="#241b2f" font-size="17" font-weight="800">XTD V2</text>
+    <text x="252" y="343" text-anchor="middle" fill="#7e7190" font-size="12">기능 확장</text>
+
+    <rect x="168" y="466" width="168" height="68" rx="12" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2" />
+    <text x="252" y="496" text-anchor="middle" fill="#241b2f" font-size="17" font-weight="800">XTD V3</text>
+    <text x="252" y="518" text-anchor="middle" fill="#6d28d9" font-size="12">코드 리팩토링</text>
+
+    <rect x="350" y="188" width="160" height="64" rx="12" fill="#faf5ff" stroke="#d8b4fe" />
+    <text x="430" y="215" text-anchor="middle" fill="#241b2f" font-size="16" font-weight="800">DPS (TOD-DPI)</text>
+    <text x="430" y="235" text-anchor="middle" fill="#7e7190" font-size="12">XTD legacy branch</text>
+
+    <rect x="538" y="312" width="144" height="56" rx="12" fill="#fff7ed" stroke="#fed7aa" />
+    <text x="610" y="335" text-anchor="middle" fill="#241b2f" font-size="16" font-weight="800">DD</text>
+    <text x="610" y="353" text-anchor="middle" fill="#9a6b33" font-size="12">Vue / Kotlin</text>
+
+    <rect x="702" y="558" width="176" height="78" rx="12" fill="#faf5ff" stroke="#d8b4fe" />
+    <text x="790" y="584" text-anchor="middle" fill="#241b2f" font-size="16" font-weight="800">SMR 국가과제</text>
+    <text x="790" y="606" text-anchor="middle" fill="#7e7190" font-size="12">Secure Agent · COMX</text>
+    <text x="790" y="624" text-anchor="middle" fill="#7e7190" font-size="12">Data Diode</text>
+
+    <rect x="908" y="638" width="164" height="76" rx="12" fill="#f5f3ff" stroke="#a78bfa" />
+    <text x="990" y="665" text-anchor="middle" fill="#241b2f" font-size="16" font-weight="800">VIPER</text>
+    <text x="990" y="685" text-anchor="middle" fill="#6d28d9" font-size="12">XTD V3 회고 반영</text>
+    <text x="990" y="702" text-anchor="middle" fill="#7e7190" font-size="12">monorepo · shared</text>
+  </g>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif" font-size="12">
+    <text x="680" y="480" fill="#9a6b33">DD 연동 기능</text>
+    <text x="444" y="674" fill="#8b5cf6">XTD V3 구조로 병합 준비</text>
+  </g>
+</svg>
