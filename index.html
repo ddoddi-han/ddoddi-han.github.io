@@ -63,13 +63,18 @@
 
       header {
         margin-bottom: 82px;
-        text-align: center;
+      }
+
+      .hero-copy {
+        max-width: 680px;
+        margin: 0 auto;
+        text-align: left;
       }
 
       .hello {
         margin: 0 0 18px;
         color: var(--accent);
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 700;
         letter-spacing: 0.04em;
       }
@@ -91,8 +96,7 @@
       }
 
       .lead {
-        max-width: 680px;
-        margin: 0 auto 30px;
+        margin: 0 0 30px;
         color: #3a3a3a;
         font-size: 19px;
         line-height: 1.8;
@@ -100,11 +104,31 @@
 
       .links {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 16px;
+        flex-direction: column;
+        gap: 8px;
         color: var(--subtle);
         font-size: 15px;
+        line-height: 1.55;
+        text-align: left;
+        white-space: nowrap;
+      }
+
+      .links a {
+        border-bottom: 0;
+      }
+
+      .links .label {
+        color: var(--subtle);
+        font-weight: 700;
+      }
+
+      .links .value {
+        color: var(--accent);
+        border-bottom: 1px solid rgba(124, 58, 237, 0.28);
+      }
+
+      .links a:hover .value {
+        border-bottom-color: var(--accent);
       }
 
       section {
@@ -307,6 +331,7 @@
         }
 
         header {
+          display: block;
           margin-bottom: 32px;
         }
 
@@ -341,19 +366,16 @@
   <body>
     <main class="page">
       <header>
-        <p class="hello">반갑습니다, 저는 한솔지입니다.</p>
-        <h1>게으르기 위해<br />부지런한 개발자</h1>
-        <p class="lead">
-          반복되는 일을 줄이고, 사람이 덜 신경 써도 되는 구조를 만드는 데 관심이
-          많습니다. NAONWORKS에서 약 4년 반 동안 OT 보안 제품의 웹 관리 콘솔을
-          만들며 프론트엔드 구조 개선, 인증·취약점 대응, API와 DB
-          마이그레이션까지 함께 다뤘습니다.
-        </p>
-        <nav class="links" aria-label="contact links">
-          <a href="https://github.com/ddoddi-han">GitHub</a>
-          <a href="https://hsj6660.tistory.com/">Blog</a>
-          <a href="https://ddoddi-han.github.io">Resume</a>
-        </nav>
+        <div class="hero-copy">
+          <p class="hello">반갑습니다, 저는 한솔지입니다.</p>
+          <h1>게으르기 위해<br />부지런한 개발자</h1>
+          <p class="lead">
+            반복되는 일을 줄이고, 사람이 덜 신경 써도 되는 구조를 만드는 데
+            관심이 많습니다. NAONWORKS에서 4년 반 동안 OT 보안 제품의 웹 관리
+            콘솔을 만들며 프론트엔드 구조 개선, 인증·취약점 대응, API와 DB
+            마이그레이션까지 함께 다뤘습니다.
+          </p>
+        </div>
       </header>
 
       <section aria-labelledby="about">
@@ -379,16 +401,16 @@
         </ul>
       </section>
 
-      <section aria-labelledby="lineage">
-        <h2 id="lineage">Product Lineage.</h2>
+      <section aria-labelledby="timeline">
+        <h2 id="timeline">Career Timeline.</h2>
         <p>
           프로젝트 간 분기와 통합 과정을 중심으로, 지난 4년 반의 개발 경험을
           타임라인으로 구성했습니다.
         </p>
         <figure class="lineage-figure">
           <img
-            src="./project-lineage-sjhan.svg"
-            alt="XTD V1부터 XTD V3, DPS, SMR, VIPER, DD로 이어지는 제품 계보와 타임라인"
+            src="./career-timeline.svg"
+            alt="XTD V1부터 XTD V3, DPS, SMR, VIPER, DD로 이어지는 커리어 타임라인"
           />
         </figure>
       </section>
@@ -398,7 +420,7 @@
 
         <article class="company">
           <h3>NAONWORKS.</h3>
-          <p class="meta">Full-stack Web Developer · 2022.03 - 현재</p>
+          <p class="meta">Full-stack Web Developer · 2022.01 ~ 현재</p>
           <p>
             OT/ICS 네트워크 보안, VoIP 보안 장비, Data Diode, Secure Agent 등
             산업용 보안 제품의 웹 관리 콘솔을 개발했습니다. 제품 특성상
@@ -410,7 +432,7 @@
 
         <article class="project">
           <h4>XTD V1-V3 OT 보안 모니터링 콘솔.</h4>
-          <p class="meta">2022.03 - 현재</p>
+          <p class="meta">2022.01 ~ 현재</p>
 
           <h5>Description.</h5>
           <p>
@@ -453,7 +475,7 @@
 
         <article class="project">
           <h4>SMR 국가과제 보안 모니터링 콘솔.</h4>
-          <p class="meta">2025.05 - 현재</p>
+          <p class="meta">2025.05 ~ 현재</p>
 
           <h5>Description.</h5>
           <p>
@@ -487,7 +509,7 @@
 
         <article class="project">
           <h4>VIPER VoIP 보안장비 관리 콘솔.</h4>
-          <p class="meta">2025.11 - 현재</p>
+          <p class="meta">2025.11 ~ 현재</p>
 
           <h5>Description.</h5>
           <p>
@@ -526,7 +548,7 @@
 
         <article class="project">
           <h4>DPS / TOD-DPI OT DPI 보안정책 콘솔.</h4>
-          <p class="meta">2022.03 - 2024.02</p>
+          <p class="meta">2022.01 - 2024.02</p>
 
           <h5>Description.</h5>
           <p>
@@ -661,11 +683,20 @@
 
       <section aria-labelledby="contact">
         <h2 id="contact">Contact.</h2>
-        <ul>
-          <li><a href="https://github.com/ddoddi-han">GitHub</a></li>
-          <li><a href="https://hsj6660.tistory.com/">Blog</a></li>
-          <li><a href="https://ddoddi-han.github.io">Resume</a></li>
-        </ul>
+        <nav class="links" aria-label="contact links">
+          <a href="mailto:sjhan9832@gmail.com">
+            <span class="label">Email:</span>
+            <span class="value">sjhan9832@gmail.com</span>
+          </a>
+          <a href="https://hsj6660.tistory.com/">
+            <span class="label">Blog:</span>
+            <span class="value">hsj6660.tistory.com</span>
+          </a>
+          <a href="https://github.com/ddoddi-han">
+            <span class="label">GitHub:</span>
+            <span class="value">github.com/ddoddi-han</span>
+          </a>
+        </nav>
       </section>
 
       <footer>Last updated: 2026.06</footer>
