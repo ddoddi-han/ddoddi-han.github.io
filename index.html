@@ -10,7 +10,7 @@
     <meta property="og:title" content="한솔지 | Full-stack Web Developer" />
     <meta
       property="og:description"
-      content="게으르기 위해 부지런한 개발자. OT 보안 제품 웹 콘솔을 개발합니다."
+      content="React·Next.js·Node.js 기반 OT/ICS·VoIP 보안 제품 웹 콘솔을 개발합니다."
     />
     <meta property="og:type" content="website" />
     <title>한솔지 | Full-stack Web Developer</title>
@@ -368,13 +368,26 @@
       <header>
         <div class="hero-copy">
           <p class="hello">반갑습니다, 저는 한솔지입니다.</p>
-          <h1>게으르기 위해<br />부지런한 개발자</h1>
+          <h1>OT/ICS 보안 제품<br />Full-stack Developer</h1>
           <p class="lead">
-            반복되는 일을 줄이고, 사람이 덜 신경 써도 되는 구조를 만드는 데
-            관심이 많습니다. NAONWORKS에서 4년 반 동안 OT 보안 제품의 웹 관리
-            콘솔을 만들며 프론트엔드 구조 개선, 인증·취약점 대응, API와 DB
-            마이그레이션까지 함께 다뤘습니다.
+            반복되는 일을 줄이고, 사람이 덜 신경 써도 되는 구조를 만드는 데 관심이 많습니다.<br />
+            산업용 보안 제품의 복잡한 운영 요구사항을 화면·API·DB로 연결하고,
+            안전하게 운영되는 웹 콘솔로 구현합니다.
           </p>
+          <nav class="links" aria-label="contact links">
+            <a href="mailto:sjhan9832@gmail.com">
+              <span class="label">Email:</span>
+              <span class="value">sjhan9832@gmail.com</span>
+            </a>
+            <a href="https://hsj6660.tistory.com/">
+              <span class="label">Blog:</span>
+              <span class="value">hsj6660.tistory.com</span>
+            </a>
+            <a href="https://github.com/ddoddi-han">
+              <span class="label">GitHub:</span>
+              <span class="value">github.com/ddoddi-han</span>
+            </a>
+          </nav>
         </div>
       </header>
 
@@ -384,14 +397,14 @@
           <li>
             React, Next.js, TypeScript, Node.js 기반으로 보안 장비의 대시보드,
             자산·토폴로지, 탐지·정책, 로그·리포트, 인증·권한, 시스템 관리 기능을
-            구현했습니다.
+            API와 DB까지 구현했습니다.
           </li>
           <li>
             XTD V1부터 V3까지 제품을 이어서 개발했고, V2 Page Router 구조를
             Next.js App Router 기반 V3 구조로 재구축했습니다.
           </li>
           <li>
-            GS 인증, CC 인증, 중국 공안 인증, ISO 27001 심사 준비,
+            GS 인증, CC 인증, 중국 공안 인증, ISO 27001 심사 준비와
             AppScan/Acunetix 웹 취약점 점검에 대응했습니다.
           </li>
           <li>
@@ -404,8 +417,7 @@
       <section aria-labelledby="timeline">
         <h2 id="timeline">Career Timeline.</h2>
         <p>
-          프로젝트 간 분기와 통합 과정을 중심으로, 지난 4년 반의 개발 경험을
-          타임라인으로 구성했습니다.
+          지난 4년 반의 개발 경험을 프로젝트별 타임라인으로 정리했습니다.
         </p>
         <figure class="lineage-figure">
           <img
@@ -422,17 +434,14 @@
           <h3>NAONWORKS.</h3>
           <p class="meta">Full-stack Web Developer · 2022.01 ~ 현재</p>
           <p>
-            OT/ICS 네트워크 보안, VoIP 보안 장비, Data Diode, Secure Agent 등
-            산업용 보안 제품의 웹 관리 콘솔을 개발했습니다. 제품 특성상
-            인증·권한, 운영 감사 로그, 보안성 심사, 취약점 개선, 장비 운영
-            안정성이 중요했고, 주요 화면과 API, DB migration, 외부 협업 브랜치
-            병합까지 폭넓게 수행했습니다.
+            산업용 보안 제품의 웹 관리 콘솔을 개발하며 주요 화면과 API, DB
+            migration, 외부 협업 브랜치 병합까지 담당했습니다.
           </p>
         </article>
 
         <article class="project">
           <h4>XTD V1-V3 OT 보안 모니터링 콘솔.</h4>
-          <p class="meta">2022.01 ~ 현재</p>
+          <p class="meta">2022.03 ~ 현재</p>
 
           <h5>Description.</h5>
           <p>
@@ -444,32 +453,36 @@
           <h5>What did I do.</h5>
           <ul>
             <li>
-              2명 규모로 약 2개월 동안 V2 계열 Page Router 프론트엔드를 Next.js
-              App Router 기반 V3 구조로 재구축했습니다.
+              2인 개발로 약 2개월간 Next.js Page Router 기반 레거시 콘솔을 App
+              Router로 재구축하고, route group·provider·TanStack Query 및 공통
+              검색·테이블·폼·모달 패턴을 표준화해 확장 가능한 화면 개발 구조를
+              마련했습니다.
             </li>
             <li>
-              route group, layout/provider, TanStack Query, 검색·테이블·모달·폼
-              패턴을 표준화해 신규 화면 개발 구조를 단순화했습니다.
+              다중 탭에서 SSE 연결이 HTTP/1.1 동시 연결 제한에 의해 고갈되던
+              문제를 분석해, 외부 HTTP/2 edge proxy와 내부 HTTP/1.1 분리
+              아키텍처로 개선하여 실시간 모니터링 화면 중단 문제를 해결했습니다.
             </li>
             <li>
-              Next custom server를 구성하고 WebSocket 기반 실시간 갱신을 SSE로
-              전환했습니다. 다중 탭 환경의 HTTP/1.1 연결 수 제한 문제는 HTTP/2
-              edge proxy와 내부 H1.1 분리 구조로 해결했습니다.
+              AppScan/Acunetix 점검에서 발견된 상 6건·중 4건의 웹 취약점을 서버
+              측 validation, API allowlist, 보안 헤더, TLS 설정 개선으로 대응해
+              상·중 취약점 0건을 달성했습니다.
             </li>
             <li>
-              AppScan/Acunetix 점검에서 2024-07-10 기준 상 6건·중 4건이던 취약점
-              결과를 2024-08-05 기준 상 0건·중 0건으로 낮췄습니다.
+              대용량 시계열 데이터를 Highcharts로 표현하기 위해 
+              Redis, InfluxDB 연동 및 조회 로직을 구현했습니다.
             </li>
             <li>
-              태그 관련 시계열 데이터를 Redis 기반 조회에서 InfluxDB 기반 조회로
-              전환하고, 제품 버전 상승에 맞춰 DB migration을 작성했습니다.
+              자산-프로토콜 관계를 1:N 데이터 모델로 정규화하고 JSON 집계·검색
+              필터를 공통화하여 자산·토폴로지·대시보드·리포트 등 12개 이상
+              모듈의 조회 정합성을 개선했습니다.
             </li>
           </ul>
 
           <h5>Tech Stack.</h5>
           <p class="stack">
-            TypeScript, React, Next.js, App Router, Node.js, Express, MariaDB,
-            InfluxDB, Redis, TanStack Query, SSE, HTTP/2 proxy
+            TypeScript, React, Next.js, Node.js, Express, MariaDB,
+            InfluxDB, Redis, TanStack Query, Highcharts, SSE, HTTP/2 proxy
           </p>
         </article>
 
@@ -486,17 +499,19 @@
           <h5>What did I do.</h5>
           <ul>
             <li>
-              Secure Agent, COMX, Data Diode 자산을 테이블 설계, API, 화면, 상세
-              모달, 로그, 대시보드 위젯까지 풀스택으로 구현했습니다.
+              Secure Agent, 안전등급 제어기기(COMX), Data Diode 등 신규 자산
+              도메인 3종을 테이블 설계부터 API, 화면, 상세 모달, 로그, 대시보드
+              위젯까지 풀스택으로 구현했습니다.
             </li>
             <li>
-              DD 제품과의 연동 요구사항을 반영해 Data Diode 자산·상태·로그를 SMR
-              콘솔에서 조회하고 운영할 수 있도록 화면과 API 흐름을 구성했습니다.
+              외부 취약점 분석 서버(R-VAT) 연동에 연결 테스트, 토큰 재인증,
+              timeout·upstream·contract 오류 분기, 민감정보 마스킹을 구현해 외부
+              CVE 분석 결과를 운영 화면과 로그에 안전하게 연결했습니다.
             </li>
             <li>
-              리팩토링된 XTD V3 구조에 맞춰 SMR 브랜치를 병합하고,
-              develop/smr-develop 간 메뉴, i18n, AssetInfo, 빌드 오류, 제품별
-              분기 충돌을 정리했습니다.
+              SBOM 등록·CVE 상세 조회·재검사 흐름을 구현하고, 트랜잭션과 row
+              lock으로 재검사 결과가 상세·요약 상태에 일관되게 반영되도록
+              설계했습니다.
             </li>
           </ul>
 
@@ -520,22 +535,19 @@
           <h5>What did I do.</h5>
           <ul>
             <li>
-              pnpm workspace 기반 monorepo 구조를 구성하고, frontend/backend
-              공통 다국어 key, 타입, enum, 상수, IP 검증 유틸을 shared package로
-              분리했습니다.
+              신규 제품을 pnpm workspace 기반 monorepo로 구성하고 공통 타입·상수·
+              다국어·검증 유틸을 shared package로 분리해 프론트엔드와 백엔드 간
+              중복을 줄였습니다.
             </li>
             <li>
-              backend에도 Zod 기반 allowlist validation을 적용해 허용된
-              parameter만 처리하도록 제한하고, 서버 검증 에러를 react-hook-form
-              필드 에러로 연결했습니다.
+              JWT 인증, IP·권한 검증, 계정 잠금, 최초 로그인 제한 토큰, 감사 로그
+              및 민감정보 마스킹을 구현해 보안장비 콘솔의 인증·추적 체계를
+              설계했습니다.
             </li>
             <li>
-              desktop/mobile 메뉴, sidebar, modal, login/register 화면을 구현해
-              반응형 요구사항을 초기 구조에 반영했습니다.
-            </li>
-            <li>
-              JWT 발급·갱신, 토큰·허용 IP·권한 검증, 계정 잠금, 감사 로그,
-              민감정보 마스킹, CC 인증 모드와 인증서 관리 화면을 구현했습니다.
+              Zod 기반 서버 검증과 react-hook-form 공통 폼을 연결해 서버 검증
+              오류를 필드 단위로 반환하고, 입력 검증 책임을 클라이언트가 아닌
+              서버로 일원화했습니다.
             </li>
           </ul>
 
@@ -548,7 +560,7 @@
 
         <article class="project">
           <h4>DPS / TOD-DPI OT DPI 보안정책 콘솔.</h4>
-          <p class="meta">2022.01 - 2024.02</p>
+          <p class="meta">2024.02 - 2026.03</p>
 
           <h5>Description.</h5>
           <p>
@@ -598,7 +610,12 @@
             </li>
             <li>
               ExcelJS로 회차별 측정값과 평균값을 포함한 .xlsx 결과 파일을 자동
-              생성해 수동 반복 측정 업무를 줄였습니다.
+              생성해 수동 반복 측정 업무를 줄이고, 반복 성능 시험을 재현 가능한
+              절차로 전환했습니다.
+            </li>
+            <li>
+              계정·알림·운영 로그·시스템 설정·펌웨어를 포함한 BVT 12개 항목을
+              Playwright 시나리오로 재구성해 인증 전 회귀 점검 기반을 마련했습니다.
             </li>
           </ul>
 
@@ -614,14 +631,15 @@
 
           <h5>Description.</h5>
           <p>
-            Vue/Kotlin 기반 제품 개발을 잠깐 맡았던 보조 경험입니다. 이력서의
-            중심은 React/Next.js 기반 OT 보안 제품 경험에 둡니다.
+            Vue 3·Quasar 프론트엔드와 Kotlin·Spring Boot WebFlux 백엔드 기반의
+            산업용 보안 어플라이언스 웹 콘솔을 풀스택으로 개발했습니다.
           </p>
 
           <h5>What did I do.</h5>
           <ul>
             <li>
-              네트워크 설정, ODM/화이트라벨, 권한 제어 기능을 구현했습니다.
+              네트워크 설정, ODM/화이트라벨, 권한 제어 기능을 화면부터
+              Controller·Service·Repository까지 구현했습니다.
             </li>
             <li>
               라우팅, 본딩, 인터페이스 설정 기능과 CIDR·넷마스크 검증, 직접 URL
@@ -650,22 +668,24 @@
             <h3>Backend & Database.</h3>
             <p>
               Node.js, Express, JWT, Passport, MariaDB/MySQL, Sequelize, Kysely,
-              raw SQL, InfluxDB, Redis, DB migration
+              raw SQL, InfluxDB, Redis, DB migration, Transaction, Row Lock
             </p>
           </div>
           <div class="skill-row">
             <h3>Security.</h3>
             <p>
               GS/CC/중국 공안 인증 대응, ISO 27001 심사 준비, AppScan/Acunetix
-              취약점 개선, CSP, security headers, TLS cipher suite, SonarQube
-              secure coding, audit log masking
+              취약점 개선, server-side validation, API allowlist, RBAC, CSP,
+              security headers, TLS cipher suite, AES-256, SonarQube secure coding,
+              audit log masking
             </p>
           </div>
           <div class="skill-row">
             <h3>Visualization & Test.</h3>
             <p>
               Highcharts, Cytoscape, sigma.js/graphology, Chart.js,
-              react-grid-layout, Playwright, Jest, supertest, ExcelJS
+              react-grid-layout, Playwright, BVT, E2E Test, Jest, supertest,
+              ExcelJS, Jenkins CI
             </p>
           </div>
         </div>
@@ -681,25 +701,7 @@
         </p>
       </section>
 
-      <section aria-labelledby="contact">
-        <h2 id="contact">Contact.</h2>
-        <nav class="links" aria-label="contact links">
-          <a href="mailto:sjhan9832@gmail.com">
-            <span class="label">Email:</span>
-            <span class="value">sjhan9832@gmail.com</span>
-          </a>
-          <a href="https://hsj6660.tistory.com/">
-            <span class="label">Blog:</span>
-            <span class="value">hsj6660.tistory.com</span>
-          </a>
-          <a href="https://github.com/ddoddi-han">
-            <span class="label">GitHub:</span>
-            <span class="value">github.com/ddoddi-han</span>
-          </a>
-        </nav>
-      </section>
-
-      <footer>Last updated: 2026.06</footer>
+      <footer>Last updated: 2026.07</footer>
     </main>
   </body>
 </html>
