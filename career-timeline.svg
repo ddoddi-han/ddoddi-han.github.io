@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 780" role="img" aria-labelledby="title desc">
-  <title id="title">한솔지 프로젝트 계보 타임라인</title>
-  <desc id="desc">제품별 세로 타임라인으로 XTD V1, V2, V3에서 DPS와 SMR이 분기되고, XTD V3 회고가 VIPER 설계로 이어지는 흐름을 표현한 다이어그램</desc>
+  <title id="title">한솔지 프로젝트 타임라인</title>
+  <desc id="desc">2022년 3월 XTD 시작 이후 DPS, DD, SMR, VIPER로 확장된 프로젝트 흐름과 2026년 7월까지의 진행 기간을 표현한 다이어그램</desc>
   <defs>
     <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#8b5cf6" />
@@ -14,8 +14,8 @@
   </defs>
 
   <rect width="1180" height="760" rx="20" fill="#ffffff" />
-  <text x="56" y="58" fill="#241b2f" font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif" font-size="30" font-weight="800">프로젝트 계보</text>
-  <text x="56" y="88" fill="#7e7190" font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif" font-size="15">시간은 위에서 아래로 흐르고, 각 제품은 별도의 세로 라인으로 이어집니다.</text>
+  <text x="56" y="58" fill="#241b2f" font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif" font-size="30" font-weight="800">프로젝트 타임라인</text>
+  <text x="56" y="88" fill="#7e7190" font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif" font-size="15">시간은 위에서 아래로 흐르고, 현재 진행 중인 프로젝트는 2026.07까지 이어집니다.</text>
 
   <g font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif">
     <text x="72" y="124" fill="#7c3aed" font-size="14" font-weight="800">TIME</text>
@@ -27,32 +27,30 @@
   </g>
 
   <g stroke="#efe7fb" stroke-width="1">
-    <line x1="56" y1="150" x2="1120" y2="150" />
     <line x1="56" y1="190" x2="1120" y2="190" />
     <line x1="56" y1="300" x2="1120" y2="300" />
     <line x1="56" y1="345" x2="1120" y2="345" />
     <line x1="56" y1="435" x2="1120" y2="435" />
-    <line x1="56" y1="470" x2="1120" y2="470" />
     <line x1="56" y1="555" x2="1120" y2="555" />
     <line x1="56" y1="645" x2="1120" y2="645" />
+    <line x1="56" y1="680" x2="1120" y2="680" />
     <line x1="56" y1="715" x2="1120" y2="715" />
   </g>
 
   <g font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif" fill="#7e7190" font-size="13">
-    <text x="72" y="154">2022.01</text>
     <text x="72" y="194">2022.03</text>
     <text x="72" y="304">2023.11</text>
     <text x="72" y="349">2024.02</text>
     <text x="72" y="439">2024.11</text>
-    <text x="72" y="474">2024.12</text>
     <text x="72" y="559">2025.05</text>
     <text x="72" y="649">2025.11</text>
-    <text x="72" y="719">2026.03</text>
+    <text x="72" y="684">2026.03</text>
+    <text x="72" y="719">2026.07</text>
   </g>
 
   <g fill="none" stroke-linecap="round" stroke-linejoin="round">
     <line x1="252" y1="190" x2="252" y2="715" stroke="#7c3aed" stroke-width="9" />
-    <line x1="430" y1="345" x2="430" y2="715" stroke="#a855f7" stroke-width="8" />
+    <line x1="430" y1="345" x2="430" y2="680" stroke="#a855f7" stroke-width="8" />
     <line x1="610" y1="300" x2="610" y2="435" stroke="#f59e0b" stroke-width="7" />
     <line x1="790" y1="555" x2="790" y2="715" stroke="#9333ea" stroke-width="8" />
     <line x1="990" y1="645" x2="990" y2="715" stroke="#8b5cf6" stroke-width="8" />
@@ -60,7 +58,7 @@
     <path d="M 252 345 C 300 345, 350 345, 430 345" stroke="#a855f7" stroke-width="3" marker-end="url(#arrow-purple)" />
     <path d="M 252 555 C 420 555, 610 555, 790 555" stroke="#9333ea" stroke-width="3" marker-end="url(#arrow-purple)" />
     <path d="M 610 435 C 640 480, 700 530, 790 555" stroke="#f59e0b" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arrow-amber)" />
-    <path d="M 430 715 C 370 715, 310 715, 252 715" stroke="#c084fc" stroke-width="3" stroke-dasharray="9 8" marker-end="url(#arrow-purple)" />
+    <path d="M 430 680 C 370 680, 310 680, 252 680" stroke="#c084fc" stroke-width="3" stroke-dasharray="9 8" marker-end="url(#arrow-purple)" />
   </g>
 
   <g filter="url(#softShadow)" font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif">
