@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="한솔지 - 게으르기 위해 부지런한 Full-stack Web Developer"
+      content="한솔지 - 게으르기 위해 부지런한 Full-Stack Engineer"
     />
-    <meta property="og:title" content="한솔지 | Full-stack Web Developer" />
+    <meta property="og:title" content="한솔지 | Full-Stack Engineer" />
     <meta
       property="og:description"
       content="React·Next.js·Node.js 기반 OT/ICS·VoIP 보안 제품 웹 콘솔을 개발합니다."
     />
     <meta property="og:type" content="website" />
-    <title>한솔지 | Full-stack Web Developer</title>
+    <title>한솔지 | Full-Stack Engineer</title>
     <style>
       :root {
         --text: #241b2f;
@@ -66,9 +66,47 @@
       }
 
       .hero-copy {
-        max-width: 680px;
+        width: 100%;
+        max-width: 764px;
         margin: 0 auto;
         text-align: left;
+      }
+
+      .hero-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+        margin-bottom: 36px;
+      }
+
+      .identity {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        min-width: 0;
+      }
+
+      .profile-photo {
+        display: block;
+        width: 150px;
+        height: 150px;
+        flex: 0 0 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .identity h1 {
+        margin-bottom: 10px;
+        font-size: clamp(34px, 5vw, 48px);
+      }
+
+      .identity h2 {
+        margin: 0;
+        color: var(--accent);
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 1.35;
       }
 
       .hello {
@@ -105,26 +143,34 @@
       .links {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 5px;
+        align-items: flex-end;
+        width: max-content;
         color: var(--subtle);
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.55;
-        text-align: left;
+        text-align: right;
         white-space: nowrap;
       }
 
       .links a {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 58px auto;
+        column-gap: 8px;
+        align-items: baseline;
         border-bottom: 0;
       }
 
       .links .label {
         color: var(--subtle);
         font-weight: 700;
+        text-align: left;
       }
 
       .links .value {
         color: var(--accent);
-        border-bottom: 1px solid rgba(124, 58, 237, 0.28);
+        text-align: left;
       }
 
       .links a:hover .value {
@@ -300,6 +346,17 @@
           font-size: 17px;
         }
 
+        .hero-top {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        .links {
+          align-items: flex-start;
+          text-align: left;
+        }
+
         section {
           margin-top: 56px;
         }
@@ -367,25 +424,33 @@
     <main class="page">
       <header>
         <div class="hero-copy">
-          <p class="hello">반갑습니다, 저는 한솔지입니다.</p>
-          <h1>OT/ICS 보안 제품<br />Full-stack Developer</h1>
+          <div class="hero-top">
+            <div class="identity">
+              <img class="profile-photo" src="./me.png" alt="한솔지 프로필 사진" />
+              <div>
+                <h1>한솔지</h1>
+                <h2>Full-Stack Engineer</h2>
+              </div>
+            </div>
+            <nav class="links" aria-label="contact links">
+              <a href="mailto:sjhan9832@gmail.com">
+                <span class="label">Email:</span>
+                <span class="value">sjhan9832@gmail.com</span>
+              </a>
+              <a href="https://hsj6660.tistory.com/">
+                <span class="label">Blog:</span>
+                <span class="value">hsj6660.tistory.com</span>
+              </a>
+              <a href="https://github.com/ddoddi-han">
+                <span class="label">GitHub:</span>
+                <span class="value">github.com/ddoddi-han</span>
+              </a>
+            </nav>
+          </div>
           <p class="lead">
-            폐쇄망 환경에서 엄격한 보안 요구사항을 충족해야 하는 산업용 보안 제품의 웹 관리 콘솔을 개발합니다.
+            게으르기 위해 부지런한 개발자가 되고 싶은 5년 차 풀스택 엔지니어입니다.<br />
+            폐쇄망 환경에서 엄격한 보안 요구사항을 충족해야 하는 OT 보안 제품의 웹 관리 콘솔을 개발합니다.
           </p>
-          <nav class="links" aria-label="contact links">
-            <a href="mailto:sjhan9832@gmail.com">
-              <span class="label">Email:</span>
-              <span class="value">sjhan9832@gmail.com</span>
-            </a>
-            <a href="https://hsj6660.tistory.com/">
-              <span class="label">Blog:</span>
-              <span class="value">hsj6660.tistory.com</span>
-            </a>
-            <a href="https://github.com/ddoddi-han">
-              <span class="label">GitHub:</span>
-              <span class="value">github.com/ddoddi-han</span>
-            </a>
-          </nav>
         </div>
       </header>
 
@@ -421,7 +486,7 @@
           <h3>NAONWORKS.</h3>
           <p class="meta">2022.01 ~ 2026.07</p>
           <p>
-            NAONWORKS에서 폐쇄망 환경의 산업용 보안 제품 웹 콘솔을 개발했습니다.<br />
+            NAONWORKS에서 폐쇄망 환경의 OT 보안 제품 웹 콘솔을 개발했습니다.<br />
             4년 반의 개발 경험을 프로젝트별 타임라인으로 정리했습니다.
           </p>
           <figure class="lineage-figure">
