@@ -196,8 +196,8 @@
       }
 
       h4 {
-        margin: 34px 0 6px;
-        font-size: 20px;
+        margin: 30px 0 6px;
+        font-size: 22px;
         line-height: 1.4;
       }
 
@@ -426,7 +426,11 @@
         <div class="hero-copy">
           <div class="hero-top">
             <div class="identity">
-              <img class="profile-photo" src="./me.png" alt="한솔지 프로필 사진" />
+              <img
+                class="profile-photo"
+                src="./me.png"
+                alt="한솔지 프로필 사진"
+              />
               <div>
                 <h1>한솔지</h1>
                 <h2>Full-Stack Engineer</h2>
@@ -448,8 +452,10 @@
             </nav>
           </div>
           <p class="lead">
-            게으르기 위해 부지런한 개발자가 되고 싶은 5년 차 풀스택 엔지니어입니다.<br />
-            폐쇄망 환경에서 엄격한 보안 요구사항을 충족해야 하는 OT 보안 제품의 웹 관리 콘솔을 개발합니다.
+            게으르기 위해 부지런한 개발자가 되고 싶은 5년 차 풀스택
+            엔지니어입니다.<br />
+            폐쇄망 환경에서 엄격한 보안 요구사항을 충족해야 하는 OT 보안 제품의
+            웹 관리 콘솔을 개발합니다.
           </p>
         </div>
       </header>
@@ -458,23 +464,26 @@
         <h2 id="about">About.</h2>
         <ul class="summary-list">
           <li>
-            React, Next.js, TypeScript, Node.js 기반으로 주요 화면과 API를 개발하고,
-            DB Schema 설계 및 마이그레이션까지 수행했습니다.
+            React, Next.js, TypeScript, Node.js 기반으로 주요 화면과 API를
+            개발하고, DB Schema 설계 및 마이그레이션까지 수행했습니다.
           </li>
           <li>
-            신규 기능 기획 시 Figma로 웹 UI/UX를 시각화해 의사결정을 가속화하고, 
+            신규 기능 기획 시 Figma로 웹 UI/UX를 시각화해 의사결정을 가속화하고,
             화면 사전 검증으로 기획 오류를 보완했습니다.
           </li>
           <li>
-            제품 초기부터 v3까지 전담 개발하며 완성도를 높여왔으며, 
-            그 일환으로 약 2개월간 Next.js Pages Router를 App Router로 전면 전환하는 대규모 리팩토링을 진행했습니다.
+            제품 초기부터 v3까지 전담 개발하며 완성도를 높여왔으며, 그 일환으로
+            약 2개월간 Next.js Pages Router를 App Router로 전면 전환하는 대규모
+            리팩토링을 진행했습니다.
           </li>
           <li>
-            개발하면서 아쉬웠던 다국어·타입·상수·검증 중복 문제를 신규 프로젝트에 반영하여, 
-            Shared Package 구조로 개발 생산성을 크게 높였습니다.
+            개발하면서 아쉬웠던 다국어·타입·상수·검증 중복 문제를 신규
+            프로젝트에 반영하여, Shared Package 구조로 개발 생산성을 크게
+            높였습니다.
           </li>
           <li>
-            GS·CC·중국 공안 인증 및 ISO 27001 심사 대응과 AppScan/Acunetix 웹 취약점 점검을 완수하여 제품의 보안을 강화했습니다.
+            GS·CC·중국 공안 인증 및 ISO 27001 심사 대응과 AppScan/Acunetix 웹
+            취약점 점검을 완수하여 제품의 보안을 강화했습니다.
           </li>
         </ul>
       </section>
@@ -483,10 +492,10 @@
         <h2 id="experience">Work Experience.</h2>
 
         <article class="company">
-          <h3>NAONWORKS.</h3>
+          <h3>나온웍스.</h3>
           <p class="meta">2022.01 ~ 2026.07</p>
           <p>
-            NAONWORKS에서 폐쇄망 환경의 OT 보안 제품 웹 콘솔을 개발했습니다.<br />
+            나온웍스에서 폐쇄망 환경의 OT 보안 제품 웹 콘솔을 개발했습니다.<br />
             4년 반의 개발 경험을 프로젝트별 타임라인으로 정리했습니다.
           </p>
           <figure class="lineage-figure">
@@ -498,74 +507,78 @@
         </article>
 
         <article class="project">
-          <h4>CEREBRO-XTD.</h4>
-          <p class="meta">2022.03 ~ 2026.07</p>
+          <h4>XTD.</h4>
+          <p class="meta">
+            OT 자산 보안 모니터링 솔루션<br />
+            2022.03 ~ 2026.07
+          </p>
 
           <h5>Description.</h5>
-          <p>OT 가시성 및 위협 탐지 모니터링 솔루션</p>
+          <p>
+            OT 보안 장비의 자산·토폴로지·탐지·로그·리포트 관리 기능을
+            개발했습니다. 레거시 콘솔의 구조 개선부터 실시간 모니터링, 데이터
+            모델, 보안 취약점 대응까지 프론트엔드와 백엔드를 함께 담당했습니다.
+          </p>
 
           <h5>What did I do.</h5>
           <ul>
             <li>
-              2인 개발로 약 2개월간 Next.js Page Router 기반 레거시 콘솔을 App
-              Router로 재구축하고, route group·provider·TanStack Query 및 공통
-              검색·테이블·폼·모달 패턴을 표준화해 확장 가능한 화면 개발 구조를
-              마련했습니다.
+              2인 개발로 약 2개월간 레거시 콘솔을 Next.js App Router로
+              재구축하고, 데이터 패칭과 검색·테이블·폼·모달 패턴을
+              표준화했습니다.
             </li>
             <li>
-              다중 탭에서 SSE 연결이 HTTP/1.1 동시 연결 제한에 의해 고갈되던
-              문제를 분석해, 외부 HTTP/2 edge proxy와 내부 HTTP/1.1 분리
-              아키텍처로 개선하여 실시간 모니터링 화면 중단 문제를 해결했습니다.
+              다중 탭에서 실시간 화면이 멈추던 문제를 HTTP/1.1 연결 제한으로
+              분석하고, HTTP/2 edge proxy와 내부 HTTP/1.1 분리 구조로
+              해결했습니다.
             </li>
             <li>
-              AppScan/Acunetix 점검에서 발견된 상 6건·중 4건의 웹 취약점을 서버
-              측 validation, API allowlist, 보안 헤더, TLS 설정 개선으로 대응해
+              AppScan/Acunetix에서 발견된 상 6건·중 4건의 취약점을 server-side
+              validation, API allowlist, 보안 헤더·TLS 설정 개선으로 대응해
               상·중 취약점 0건을 달성했습니다.
             </li>
             <li>
-              대용량 시계열 데이터를 Highcharts로 표현하기 위해 
-              Redis, InfluxDB 연동 및 조회 로직을 구현했습니다.
-            </li>
-            <li>
-              자산-프로토콜 관계를 1:N 데이터 모델로 정규화하고 JSON 집계·검색
-              필터를 공통화하여 자산·토폴로지·대시보드·리포트 등 12개 이상
-              모듈의 조회 정합성을 개선했습니다.
+              자산-프로토콜 1:N 관계를 별도 모델로 정규화하고 JSON 집계·검색
+              필터를 공통화해 12개 이상 모듈의 조회 정합성을 개선했습니다.
             </li>
           </ul>
 
           <h5>Tech Stack.</h5>
           <p class="stack">
-            TypeScript, React, Next.js, Node.js, Express, MariaDB,
-            InfluxDB, Redis, TanStack Query, Highcharts, SSE, HTTP/2 proxy
+            TypeScript, React, Next.js, Node.js, Express, MariaDB, InfluxDB,
+            Redis, TanStack Query, Highcharts, SSE, HTTP/2 proxy
           </p>
         </article>
 
         <article class="project">
-          <h4>SMR 국가과제 보안 모니터링 콘솔.</h4>
-          <p class="meta">2025.05 ~ 2026.07</p>
+          <h4>SMR.</h4>
+          <p class="meta">
+            소형 원자로 보안 모니터링 솔루션<br />
+            2025.05 ~ 2026.07
+          </p>
 
           <h5>Description.</h5>
           <p>
-            XTD V3에서 분기한 국가과제 제품입니다. Secure Agent, 안전등급
-            제어기기(COMX), Data Diode, DD 연동 기능이 포함되어 있습니다.
+            XTD V3를 기반으로 SMR 환경의 Secure Agent, 안전등급 제어기기(COMX),
+            Data Diode 자산 관리 기능을 확장했습니다. 신규 도메인의 데이터
+            모델·API·화면과 SBOM/CVE·R-VAT 연동을 풀스택으로 구현했습니다.
           </p>
 
           <h5>What did I do.</h5>
           <ul>
             <li>
               Secure Agent, 안전등급 제어기기(COMX), Data Diode 등 신규 자산
-              도메인 3종을 테이블 설계부터 API, 화면, 상세 모달, 로그, 대시보드
-              위젯까지 풀스택으로 구현했습니다.
+              도메인 3종을 데이터 모델부터 API·화면·로그까지 풀스택으로
+              구현했습니다.
             </li>
             <li>
-              외부 취약점 분석 서버(R-VAT) 연동에 연결 테스트, 토큰 재인증,
-              timeout·upstream·contract 오류 분기, 민감정보 마스킹을 구현해 외부
-              CVE 분석 결과를 운영 화면과 로그에 안전하게 연결했습니다.
+              R-VAT 연동에 연결 테스트, 토큰 재인증, 오류 분기, 민감정보
+              마스킹을 적용해 외부 CVE 분석 결과를 운영 화면과 로그에
+              연결했습니다.
             </li>
             <li>
-              SBOM 등록·CVE 상세 조회·재검사 흐름을 구현하고, 트랜잭션과 row
-              lock으로 재검사 결과가 상세·요약 상태에 일관되게 반영되도록
-              설계했습니다.
+              SBOM 등록·CVE 조회·재검사 흐름을 구현하고, 트랜잭션과 row lock으로
+              상세·요약 상태의 데이터 일관성을 보장했습니다.
             </li>
           </ul>
 
@@ -577,31 +590,33 @@
         </article>
 
         <article class="project">
-          <h4>VIPER VoIP 보안장비 관리 콘솔.</h4>
-          <p class="meta">2025.11 ~ 2026.07</p>
+          <h4>VIPER.</h4>
+          <p class="meta">
+            인터넷전화 전용 보안 솔루션<br />
+            2025.11 ~ 2026.07
+          </p>
 
           <h5>Description.</h5>
           <p>
-            XTD V3 리팩토링에서 확인한 구조적 아쉬움을 신규 제품에 반영한 VoIP
-            보안장비 관리 콘솔입니다.
+            VoIP 보안장비의 계정·인증·권한·시스템 설정·탐지 정책 관리 콘솔을
+            신규 개발했습니다. 프론트엔드와 백엔드의 공통 구조를 설계하고
+            인증·감사 로그·입력 검증 체계를 구현했습니다.
           </p>
 
           <h5>What did I do.</h5>
           <ul>
             <li>
-              신규 제품을 pnpm workspace 기반 monorepo로 구성하고 공통 타입·상수·
-              다국어·검증 유틸을 shared package로 분리해 프론트엔드와 백엔드 간
-              중복을 줄였습니다.
+              pnpm workspace monorepo와 shared package를 구성해
+              프론트엔드·백엔드의 타입·상수·다국어·검증 규칙을 공통
+              관리했습니다.
             </li>
             <li>
-              JWT 인증, IP·권한 검증, 계정 잠금, 최초 로그인 제한 토큰, 감사 로그
-              및 민감정보 마스킹을 구현해 보안장비 콘솔의 인증·추적 체계를
-              설계했습니다.
+              JWT 인증, IP·권한 검증, 계정 잠금과 변경 전·후 감사 로그 및
+              민감정보 마스킹을 구현했습니다.
             </li>
             <li>
-              Zod 기반 서버 검증과 react-hook-form 공통 폼을 연결해 서버 검증
-              오류를 필드 단위로 반환하고, 입력 검증 책임을 클라이언트가 아닌
-              서버로 일원화했습니다.
+              Zod 기반 서버 검증과 react-hook-form을 연결해 입력 검증을 서버로
+              일원화하고 오류를 폼 필드 단위로 표시했습니다.
             </li>
           </ul>
 
@@ -613,29 +628,28 @@
         </article>
 
         <article class="project">
-          <h4>DPS / TOD-DPI OT DPI 보안정책 콘솔.</h4>
-          <p class="meta">2024.02 - 2026.03</p>
+          <h4>DPS.</h4>
+          <p class="meta">
+            OT 전용 DPI 솔루션<br />
+            2024.02 - 2026.03
+          </p>
 
           <h5>Description.</h5>
           <p>
-            XTD 레거시 코드에서 브랜치를 분기해 개발한 OT DPI 보안정책
-            제품입니다. TIG-KOREA에서는 TOD-DPI 제품명으로 소개되어 있고, 개발은
-            NAONWORKS에서 수행했습니다.
+            DNP3·Modbus 등 산업용 프로토콜의 제어명령과 보안정책을 관리하는 OT
+            DPI 콘솔을 개발했습니다. 프로토콜별 탐지·차단 정책부터 대시보드,
+            로그, 리포트, DB migration까지 담당했습니다.
           </p>
 
           <h5>What did I do.</h5>
           <ul>
             <li>
-              DNP3, Modbus 등 OT/ICS 산업용 프로토콜 제어명령의 탐지·차단 정책
-              화면을 개발했습니다.
+              산업용 프로토콜 제어명령의 탐지·차단 정책과 5-tuple 기반 일반
+              보안정책을 화면·API·DB까지 구현했습니다.
             </li>
             <li>
-              대시보드, 탐지로그, 제어명령 통제 정책, 5-tuple 기반 일반 보안정책
-              화면과 API/DB 흐름을 구현했습니다.
-            </li>
-            <li>
-              Highcharts 기반 차트, PDF/Excel 내보내기, 대용량 리포트 처리, 제품
-              버전별 DB migration을 구현했습니다.
+              대시보드·탐지 로그와 Highcharts 차트, PDF/Excel 리포트를 구현하고
+              대용량 리포트 분할 처리와 버전별 DB migration을 적용했습니다.
             </li>
           </ul>
 
@@ -647,29 +661,32 @@
         </article>
 
         <article class="project">
-          <h4>Playwright 웹 응답 성능 시험 자동화.</h4>
-          <p class="meta">2025.09</p>
+          <h4>Playwright.</h4>
+          <p class="meta">
+            웹 응답 성능 시험 자동화<br />
+            2025.09
+          </p>
 
           <h5>Description.</h5>
           <p>
-            수동 반복 측정이 필요하던 웹 응답 성능 시험을 자동화해 동일 조건의
-            결과를 산출할 수 있도록 만들었습니다.
+            보안 제품의 웹 응답 성능 시험과 인증 전 회귀 점검을 자동화했습니다.
+            주요 화면의 반복 측정·결과 리포트 생성과 핵심 기능 BVT 시나리오를
+            Playwright로 구현했습니다.
           </p>
 
           <h5>What did I do.</h5>
           <ul>
             <li>
-              주요 화면 25개 URL을 10회씩 반복 측정하고, Navigation Timing API의
-              loadEventEnd를 수집해 평균 응답 시간을 계산했습니다.
+              주요 화면 25개 URL을 10회씩 측정하고 Navigation Timing API로 평균
+              응답 시간을 수집했습니다.
             </li>
             <li>
-              ExcelJS로 회차별 측정값과 평균값을 포함한 .xlsx 결과 파일을 자동
-              생성해 수동 반복 측정 업무를 줄이고, 반복 성능 시험을 재현 가능한
-              절차로 전환했습니다.
+              회차별 측정값과 평균값을 Excel 파일로 자동 생성해 성능 시험을 재현
+              가능한 절차로 전환했습니다.
             </li>
             <li>
-              계정·알림·운영 로그·시스템 설정·펌웨어를 포함한 BVT 12개 항목을
-              Playwright 시나리오로 재구성해 인증 전 회귀 점검 기반을 마련했습니다.
+              계정·알림·운영 로그·시스템 설정·펌웨어 등 BVT 12개 항목을
+              Playwright 시나리오로 재구성했습니다.
             </li>
           </ul>
 
@@ -680,24 +697,28 @@
         </article>
 
         <article class="project">
-          <h4>DD 산업용 보안 어플라이언스 웹 콘솔.</h4>
-          <p class="meta">2023.11 - 2024.11</p>
+          <h4>DD.</h4>
+          <p class="meta">
+            물리적 일방향 보안 솔루션<br />
+            2023.11 - 2024.11
+          </p>
 
           <h5>Description.</h5>
           <p>
-            Vue 3·Quasar 프론트엔드와 Kotlin·Spring Boot WebFlux 백엔드 기반의
-            산업용 보안 어플라이언스 웹 콘솔을 풀스택으로 개발했습니다.
+            산업용 보안 어플라이언스의 네트워크·시스템 설정 관리 콘솔을
+            풀스택으로 개발했습니다. Vue·Kotlin 기반 환경에서 네트워크 설정,
+            ODM/화이트라벨, 권한 제어와 운영 안정성 기능을 구현했습니다.
           </p>
 
           <h5>What did I do.</h5>
           <ul>
             <li>
-              네트워크 설정, ODM/화이트라벨, 권한 제어 기능을 화면부터
+              네트워크 설정과 ODM/화이트라벨, 권한 제어 기능을 화면부터
               Controller·Service·Repository까지 구현했습니다.
             </li>
             <li>
-              라우팅, 본딩, 인터페이스 설정 기능과 CIDR·넷마스크 검증, 직접 URL
-              접근 제어, 시스템 시간 변경 시 강제 로그아웃 로직을 구현했습니다.
+              라우팅·본딩·인터페이스 설정, CIDR·넷마스크 검증, 직접 URL 접근
+              제어와 시스템 시간 변경 시 강제 로그아웃을 구현했습니다.
             </li>
           </ul>
 
@@ -730,8 +751,8 @@
             <p>
               GS/CC/중국 공안 인증 대응, ISO 27001 심사 준비, AppScan/Acunetix
               취약점 개선, server-side validation, API allowlist, RBAC, CSP,
-              security headers, TLS cipher suite, AES-256, SonarQube secure coding,
-              audit log masking
+              security headers, TLS cipher suite, AES-256, SonarQube secure
+              coding, audit log masking
             </p>
           </div>
           <div class="skill-row">
