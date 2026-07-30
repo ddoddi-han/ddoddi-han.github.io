@@ -17,12 +17,12 @@
   <g transform="translate(0,-45)">
   <path d="M 56 96 H 1120 V 154 H 156 V 775 H 56 Z" fill="#f8f5ff" stroke="#ede7fb" />
   <g font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif">
-    <text x="106" y="132" fill="#6d28d9" font-size="20" font-weight="600" text-anchor="middle">TIME</text>
-    <text x="252" y="132" fill="#4c1d95" font-size="20" font-weight="600" text-anchor="middle">XTD</text>
-    <text x="430" y="132" fill="#4c1d95" font-size="20" font-weight="600" text-anchor="middle">DPS</text>
-    <text x="610" y="132" fill="#7c5426" font-size="20" font-weight="600" text-anchor="middle">DD</text>
-    <text x="790" y="132" fill="#4c1d95" font-size="20" font-weight="600" text-anchor="middle">SMR</text>
-    <text x="990" y="132" fill="#4c1d95" font-size="20" font-weight="600" text-anchor="middle">VIPER</text>
+    <text x="106" y="132" fill="#6d28d9" font-size="22" font-weight="600" text-anchor="middle">TIME</text>
+    <text x="252" y="132" fill="#4c1d95" font-size="22" font-weight="600" text-anchor="middle">XTD</text>
+    <text x="430" y="132" fill="#4c1d95" font-size="22" font-weight="600" text-anchor="middle">DPS</text>
+    <text x="610" y="132" fill="#7c5426" font-size="22" font-weight="600" text-anchor="middle">DD</text>
+    <text x="790" y="132" fill="#4c1d95" font-size="22" font-weight="600" text-anchor="middle">SMR</text>
+    <text x="990" y="132" fill="#4c1d95" font-size="22" font-weight="600" text-anchor="middle">VIPER</text>
   </g>
 
   <g stroke="#efe7fb" stroke-width="1">
@@ -36,7 +36,7 @@
     <line x1="156" y1="745" x2="1120" y2="745" />
   </g>
 
-  <g font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif" fill="#7e7190" font-size="16">
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif" fill="#7e7190" font-size="18">
     <text x="72" y="194">2022.03</text>
     <text x="72" y="304">2023.11</text>
     <text x="72" y="349">2024.02</text>
@@ -62,39 +62,38 @@
 
   <g filter="url(#softShadow)" font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif">
     <rect x="178" y="202" width="148" height="56" rx="12" fill="#f3edff" stroke="#c4b5fd" />
-    <text x="252" y="228" text-anchor="middle" fill="#241b2f" font-size="17" font-weight="800">XTD V1</text>
-    <text x="252" y="245" text-anchor="middle" fill="#7e7190" font-size="12">초기 개발</text>
+    <text x="252" y="228" text-anchor="middle" fill="#241b2f" font-size="18" font-weight="800">XTD v1</text>
+    <text x="252" y="245" text-anchor="middle" fill="#7e7190" font-size="14">초기 개발</text>
 
     <rect x="178" y="312" width="148" height="56" rx="12" fill="#f3edff" stroke="#c4b5fd" />
-    <text x="252" y="338" text-anchor="middle" fill="#241b2f" font-size="17" font-weight="800">XTD V2</text>
-    <text x="252" y="355" text-anchor="middle" fill="#7e7190" font-size="12">기능 확장</text>
+    <text x="252" y="338" text-anchor="middle" fill="#241b2f" font-size="18" font-weight="800">XTD v2</text>
+    <text x="252" y="355" text-anchor="middle" fill="#7e7190" font-size="14">기능 확장</text>
 
     <rect x="168" y="490" width="168" height="68" rx="12" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2" />
-    <text x="252" y="520" text-anchor="middle" fill="#241b2f" font-size="17" font-weight="800">XTD V3</text>
-    <text x="252" y="542" text-anchor="middle" fill="#6d28d9" font-size="12">코드 리팩토링</text>
+    <text x="252" y="520" text-anchor="middle" fill="#241b2f" font-size="18" font-weight="800">XTD v3</text>
+    <text x="252" y="542" text-anchor="middle" fill="#6d28d9" font-size="14">코드 리팩토링</text>
 
     <rect x="350" y="360" width="160" height="64" rx="12" fill="#faf5ff" stroke="#d8b4fe" />
-    <text x="430" y="387" text-anchor="middle" fill="#241b2f" font-size="16" font-weight="800">DPS (TOD-DPI)</text>
-    <text x="430" y="407" text-anchor="middle" fill="#7e7190" font-size="12">2024.02 – 2026.03</text>
+    <text x="430" y="387" text-anchor="middle" fill="#241b2f" font-size="18" font-weight="800">DPS</text>
+    <text x="430" y="407" text-anchor="middle" fill="#7e7190" font-size="14">2024.02 – 2026.03</text>
 
     <rect x="538" y="312" width="144" height="56" rx="12" fill="#fff7ed" stroke="#fed7aa" />
-    <text x="610" y="335" text-anchor="middle" fill="#241b2f" font-size="16" font-weight="800">DD</text>
-    <text x="610" y="353" text-anchor="middle" fill="#9a6b33" font-size="12">2023.11 – 2024.11</text>
+    <text x="610" y="335" text-anchor="middle" fill="#241b2f" font-size="18" font-weight="800">DD</text>
+    <text x="610" y="353" text-anchor="middle" fill="#9a6b33" font-size="14">2023.11 – 2024.11</text>
 
-    <rect x="702" y="573" width="176" height="78" rx="12" fill="#faf5ff" stroke="#d8b4fe" />
-    <text x="790" y="599" text-anchor="middle" fill="#241b2f" font-size="16" font-weight="800">SMR 국가과제</text>
-    <text x="790" y="621" text-anchor="middle" fill="#7e7190" font-size="12">Secure Agent · COMX</text>
-    <text x="790" y="639" text-anchor="middle" fill="#7e7190" font-size="12">Data Diode</text>
+    <rect x="702" y="573" width="176" height="64" rx="12" fill="#faf5ff" stroke="#d8b4fe" />
+    <text x="790" y="599" text-anchor="middle" fill="#241b2f" font-size="18" font-weight="800">SMR</text>
+    <text x="790" y="621" text-anchor="middle" fill="#7e7190" font-size="14">국가 과제</text>
 
     <rect x="908" y="653" width="164" height="76" rx="12" fill="#f5f3ff" stroke="#a78bfa" />
-    <text x="990" y="680" text-anchor="middle" fill="#241b2f" font-size="16" font-weight="800">VIPER</text>
-    <text x="990" y="700" text-anchor="middle" fill="#6d28d9" font-size="12">XTD V3 회고 반영</text>
-    <text x="990" y="717" text-anchor="middle" fill="#7e7190" font-size="12">monorepo · shared</text>
+    <text x="990" y="680" text-anchor="middle" fill="#241b2f" font-size="18" font-weight="800">VIPER</text>
+    <text x="990" y="700" text-anchor="middle" fill="#6d28d9" font-size="14">XTD v3 회고 반영</text>
+    <text x="990" y="717" text-anchor="middle" fill="#7e7190" font-size="14">Shared Package</text>
   </g>
 
-  <g font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif" font-size="12">
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif" font-size="14">
     <text x="680" y="480" fill="#9a6b33">DD 연동 기능 추가</text>
-    <text x="444" y="674" fill="#8b5cf6">XTD V3 구조로 병합 준비</text>
+    <text x="444" y="674" fill="#8b5cf6">XTD v3 구조로 병합 준비</text>
   </g>
   </g>
 </svg>
