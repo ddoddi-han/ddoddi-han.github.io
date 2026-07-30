@@ -45,14 +45,18 @@
         word-break: keep-all;
       }
 
-      a {
+      a,
+      .links .value {
         color: var(--accent);
-        text-decoration: none;
-        border-bottom: 1px solid rgba(124, 58, 237, 0.28);
+        text-decoration: underline;
+        text-decoration-color: rgba(124, 58, 237, 0.28);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
       }
 
-      a:hover {
-        border-bottom-color: var(--accent);
+      a:hover,
+      .links a:hover .value {
+        text-decoration-color: var(--accent);
       }
 
       .page {
@@ -159,7 +163,7 @@
         grid-template-columns: 58px auto;
         column-gap: 8px;
         align-items: baseline;
-        border-bottom: 0;
+        text-decoration: none;
       }
 
       .links .label {
@@ -169,12 +173,7 @@
       }
 
       .links .value {
-        color: var(--accent);
         text-align: left;
-      }
-
-      .links a:hover .value {
-        border-bottom-color: var(--accent);
       }
 
       section {
@@ -492,7 +491,15 @@
         <h2 id="experience">Work Experience.</h2>
 
         <article class="company">
-          <h3>나온웍스.</h3>
+          <h3>
+            <a
+              href="https://www.naonworks.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              나온웍스.
+            </a>
+          </h3>
           <p class="meta">2022.01 ~ 2026.07</p>
           <p>
             나온웍스에서 폐쇄망 환경의 OT 보안 제품 웹 콘솔을 개발했습니다.<br />
@@ -509,7 +516,12 @@
         <article class="project">
           <h4>XTD.</h4>
           <p class="meta">
-            OT 자산 보안 모니터링 솔루션<br />
+            <a
+              href="https://www.naonworks.com/solution/info.php?ptype=view&amp;prdcode=2306140004"
+              target="_blank"
+              rel="noreferrer"
+              >OT 자산 보안 모니터링 솔루션</a
+            ><br />
             2022.03 ~ 2026.07
           </p>
 
@@ -592,7 +604,12 @@
         <article class="project">
           <h4>VIPER.</h4>
           <p class="meta">
-            인터넷전화 전용 보안 솔루션<br />
+            <a
+              href="https://www.naonworks.com/solution/info.php?ptype=view&amp;prdcode=2306140001"
+              target="_blank"
+              rel="noreferrer"
+              >인터넷전화 전용 보안 솔루션</a
+            ><br />
             2025.11 ~ 2026.07
           </p>
 
@@ -630,7 +647,9 @@
         <article class="project">
           <h4>DPS.</h4>
           <p class="meta">
-            OT 전용 DPI 솔루션<br />
+            <a href="https://tigkorea.com/71" target="_blank" rel="noreferrer">
+              OT 전용 DPI 솔루션 </a
+            ><br />
             2024.02 - 2026.03
           </p>
 
@@ -699,7 +718,12 @@
         <article class="project">
           <h4>DD.</h4>
           <p class="meta">
-            물리적 일방향 보안 솔루션<br />
+            <a
+              href="https://www.naonworks.com/solution/info.php?ptype=view&amp;prdcode=2306140005"
+              target="_blank"
+              rel="noreferrer"
+              >물리적 일방향 보안 솔루션</a
+            ><br />
             2023.11 - 2024.11
           </p>
 
