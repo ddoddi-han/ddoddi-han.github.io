@@ -629,31 +629,26 @@
 
           <h5>Description.</h5>
           <p>
-            XTD V3에서 분기한 SMR 제품의 신규 자산 및 취약점 관리 기능을
-            풀스택으로 개발했습니다.
+            XTD v3에서 분기한 국가과제로, 단독으로 맡아 설계부터 개발 및
+            배포까지 담당했습니다.
           </p>
 
           <h5>What did I do.</h5>
           <ul>
             <li>
-              Secure Agent, 안전등급 제어기기(COMX), Data Diode 등 신규 자산
-              도메인 3종을 데이터 모델·API·화면·로그·대시보드까지 구현했습니다.
+              외부 서버와 REST API로 연동해 SBOM 항목별 위험도 분석 결과를
+              실시간 반영하고, 요청 실패 대응 로직을 구축해 연동 안정성을
+              확보했습니다.
             </li>
             <li>
-              R-VAT 연동에 연결 테스트, 토큰 재인증, timeout·권한 오류 분기,
-              민감정보 마스킹을 적용해 외부 CVE 분석 결과를 제품에 연결했습니다.
+              동시 재검사 요청 시 발생할 수 있는 데이터 불일치를 방지하기 위해
+              DB 트랜잭션과 Row Lock을 적용해 정합성을 보장했습니다.
             </li>
             <li>
-              SBOM 등록·CVE 조회·재검사 흐름을 구현하고, 트랜잭션과 row lock으로
-              상세·요약 데이터의 일관성을 보장했습니다.
+              위협 탐지 시 실시간 토스트·음성 알림을 제공해 운영자의 즉각적인
+              인지와 대응을 지원했습니다.
             </li>
           </ul>
-
-          <h5>Tech Stack.</h5>
-          <p class="stack">
-            TypeScript, React, Next.js, Node.js/Express, MariaDB, R-VAT,
-            SBOM/CVE
-          </p>
         </article>
 
         <article class="project">
