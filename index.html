@@ -318,13 +318,6 @@
         color: var(--subtle);
       }
 
-      .note {
-        padding: 20px 22px;
-        border-left: 4px solid var(--accent);
-        background: var(--accent-light);
-        color: #31443a;
-      }
-
       footer {
         margin-top: 86px;
         padding-top: 24px;
@@ -438,10 +431,6 @@
 
         .project,
         .skill-row,
-        .note {
-          break-inside: avoid;
-        }
-
         a {
           color: #222222;
           border-bottom: 0;
@@ -558,39 +547,33 @@
           </p>
 
           <h5>Description.</h5>
-          <p>
-            OT 보안 장비의 자산·토폴로지·탐지·로그·리포트 관리 기능을
-            개발했습니다. 레거시 콘솔의 구조 개선부터 실시간 모니터링, 데이터
-            모델, 보안 취약점 대응까지 프론트엔드와 백엔드를 함께 담당했습니다.
-          </p>
+          <p>프로젝트의 초기 단계부터 풀스택 개발 및 배포까지 완수했습니다.</p>
 
           <h5>What did I do.</h5>
           <ul>
             <li>
               2인 개발로 약 2개월간 레거시 콘솔을 Next.js App Router로
-              재구축하고, 데이터 패칭과 검색·테이블·폼·모달 패턴을
-              표준화했습니다.
+              재구축하고, 데이터 패칭·검색·테이블·폼·모달 패턴을 표준화했습니다.
             </li>
             <li>
-              다중 탭에서 실시간 화면이 멈추던 문제를 HTTP/1.1 연결 제한으로
-              분석하고, HTTP/2 edge proxy와 내부 HTTP/1.1 분리 구조로
-              해결했습니다.
+              WebSocket 기반 실시간 갱신을 SSE로 전환하고, 다중 탭에서 발생한
+              HTTP/1.1 연결 제한 문제를 HTTP/2 edge proxy 구조로 해결했습니다.
             </li>
             <li>
-              AppScan/Acunetix에서 발견된 상 6건·중 4건의 취약점을 server-side
-              validation, API allowlist, 보안 헤더·TLS 설정 개선으로 대응해
-              상·중 취약점 0건을 달성했습니다.
+              AppScan·Acunetix 점검에서 상 6건·중 4건이던 웹 취약점을
+              server-side validation, API allowlist, 보안 헤더·TLS 설정 개선으로
+              0건까지 낮췄습니다.
             </li>
             <li>
-              자산-프로토콜 1:N 관계를 별도 모델로 정규화하고 JSON 집계·검색
-              필터를 공통화해 12개 이상 모듈의 조회 정합성을 개선했습니다.
+              복잡한 SQL 조회 쿼리를 CTE로 재구성하고 적절한 인덱스를 추가해
+              실행 시간을 기존의 1/10로 단축했습니다.
             </li>
           </ul>
 
           <h5>Tech Stack.</h5>
           <p class="stack">
-            TypeScript, React, Next.js, Node.js, Express, MariaDB, InfluxDB,
-            Redis, TanStack Query, Highcharts, SSE, HTTP/2 proxy
+            TypeScript, React, Next.js, Node.js/Express, Zustand, TanStack
+            Query, MariaDB, InfluxDB, Highcharts, Tailwind CSS, Shadcn/UI
           </p>
         </article>
 
@@ -603,33 +586,30 @@
 
           <h5>Description.</h5>
           <p>
-            XTD V3를 기반으로 SMR 환경의 Secure Agent, 안전등급 제어기기(COMX),
-            Data Diode 자산 관리 기능을 확장했습니다. 신규 도메인의 데이터
-            모델·API·화면과 SBOM/CVE·R-VAT 연동을 풀스택으로 구현했습니다.
+            XTD V3에서 분기한 SMR 제품의 신규 자산 및 취약점 관리 기능을
+            풀스택으로 개발했습니다.
           </p>
 
           <h5>What did I do.</h5>
           <ul>
             <li>
               Secure Agent, 안전등급 제어기기(COMX), Data Diode 등 신규 자산
-              도메인 3종을 데이터 모델부터 API·화면·로그까지 풀스택으로
-              구현했습니다.
+              도메인 3종을 데이터 모델·API·화면·로그·대시보드까지 구현했습니다.
             </li>
             <li>
-              R-VAT 연동에 연결 테스트, 토큰 재인증, 오류 분기, 민감정보
-              마스킹을 적용해 외부 CVE 분석 결과를 운영 화면과 로그에
-              연결했습니다.
+              R-VAT 연동에 연결 테스트, 토큰 재인증, timeout·권한 오류 분기,
+              민감정보 마스킹을 적용해 외부 CVE 분석 결과를 제품에 연결했습니다.
             </li>
             <li>
               SBOM 등록·CVE 조회·재검사 흐름을 구현하고, 트랜잭션과 row lock으로
-              상세·요약 상태의 데이터 일관성을 보장했습니다.
+              상세·요약 데이터의 일관성을 보장했습니다.
             </li>
           </ul>
 
           <h5>Tech Stack.</h5>
           <p class="stack">
-            TypeScript, React, Next.js, Node.js, Express, MariaDB, Branch
-            Integration
+            TypeScript, React, Next.js, Node.js/Express, MariaDB, R-VAT,
+            SBOM/CVE
           </p>
         </article>
 
@@ -647,9 +627,8 @@
 
           <h5>Description.</h5>
           <p>
-            VoIP 보안장비의 계정·인증·권한·시스템 설정·탐지 정책 관리 콘솔을
-            신규 개발했습니다. 프론트엔드와 백엔드의 공통 구조를 설계하고
-            인증·감사 로그·입력 검증 체계를 구현했습니다.
+            VoIP 보안장비 관리 콘솔을 신규 개발하며 프론트엔드·백엔드 공통
+            구조와 인증·감사 로그 체계를 설계했습니다.
           </p>
 
           <h5>What did I do.</h5>
@@ -660,19 +639,19 @@
               관리했습니다.
             </li>
             <li>
-              JWT 인증, IP·권한 검증, 계정 잠금과 변경 전·후 감사 로그 및
-              민감정보 마스킹을 구현했습니다.
+              JWT 인증, IP·권한 검증, 계정 잠금, 변경 전·후 감사 로그와 민감정보
+              마스킹을 구현했습니다.
             </li>
             <li>
-              Zod 기반 서버 검증과 react-hook-form을 연결해 입력 검증을 서버로
-              일원화하고 오류를 폼 필드 단위로 표시했습니다.
+              Zod 기반 서버 검증과 react-hook-form을 연결해 검증 오류를 폼 필드
+              단위로 표시했습니다.
             </li>
           </ul>
 
           <h5>Tech Stack.</h5>
           <p class="stack">
-            TypeScript, React 19, Tailwind CSS v4, shadcn/Radix UI, Zod,
-            Zustand, react-hook-form, Node.js, Express, pnpm workspace
+            TypeScript, React, Next.js, Node.js/Express, MariaDB, Zod, pnpm
+            workspace
           </p>
         </article>
 
@@ -687,27 +666,25 @@
 
           <h5>Description.</h5>
           <p>
-            DNP3·Modbus 등 산업용 프로토콜의 제어명령과 보안정책을 관리하는 OT
-            DPI 콘솔을 개발했습니다. 프로토콜별 탐지·차단 정책부터 대시보드,
-            로그, 리포트, DB migration까지 담당했습니다.
+            DNP3·Modbus 등 산업용 프로토콜의 탐지·차단 정책을 관리하는 OT DPI
+            콘솔을 개발했습니다.
           </p>
 
           <h5>What did I do.</h5>
           <ul>
             <li>
-              산업용 프로토콜 제어명령의 탐지·차단 정책과 5-tuple 기반 일반
-              보안정책을 화면·API·DB까지 구현했습니다.
+              산업용 프로토콜 제어명령 정책과 5-tuple 기반 일반 보안정책을
+              화면·API·DB까지 구현했습니다.
             </li>
             <li>
-              대시보드·탐지 로그와 Highcharts 차트, PDF/Excel 리포트를 구현하고
+              대시보드·탐지 로그·Highcharts 차트·PDF/Excel 리포트를 개발하고,
               대용량 리포트 분할 처리와 버전별 DB migration을 적용했습니다.
             </li>
           </ul>
 
           <h5>Tech Stack.</h5>
           <p class="stack">
-            React, Next.js, Node.js, MariaDB, Highcharts, OT/ICS, DPI, DNP3,
-            Modbus
+            React, Next.js, Node.js/Express, MariaDB, Highcharts, DNP3, Modbus
           </p>
         </article>
 
@@ -721,23 +698,18 @@
           <h5>Description.</h5>
           <p>
             보안 제품의 웹 응답 성능 시험과 인증 전 회귀 점검을 자동화했습니다.
-            주요 화면의 반복 측정·결과 리포트 생성과 핵심 기능 BVT 시나리오를
-            Playwright로 구현했습니다.
           </p>
 
           <h5>What did I do.</h5>
           <ul>
             <li>
-              주요 화면 25개 URL을 10회씩 측정하고 Navigation Timing API로 평균
-              응답 시간을 수집했습니다.
+              주요 화면 25개 URL을 10회씩 측정하고 Navigation Timing API 기반
+              결과를 수집했습니다.
             </li>
             <li>
-              회차별 측정값과 평균값을 Excel 파일로 자동 생성해 성능 시험을 재현
-              가능한 절차로 전환했습니다.
-            </li>
-            <li>
-              계정·알림·운영 로그·시스템 설정·펌웨어 등 BVT 12개 항목을
-              Playwright 시나리오로 재구성했습니다.
+              측정 결과를 Excel로 자동 생성하고, 계정·알림·운영 로그·시스템
+              설정·펌웨어 등 BVT 12개 항목을 Playwright 시나리오로
+              자동화했습니다.
             </li>
           </ul>
 
@@ -762,25 +734,24 @@
           <h5>Description.</h5>
           <p>
             산업용 보안 어플라이언스의 네트워크·시스템 설정 관리 콘솔을
-            풀스택으로 개발했습니다. Vue·Kotlin 기반 환경에서 네트워크 설정,
-            ODM/화이트라벨, 권한 제어와 운영 안정성 기능을 구현했습니다.
+            Vue·Kotlin 기반으로 풀스택 개발했습니다.
           </p>
 
           <h5>What did I do.</h5>
           <ul>
             <li>
-              네트워크 설정과 ODM/화이트라벨, 권한 제어 기능을 화면부터
-              Controller·Service·Repository까지 구현했습니다.
+              라우팅·본딩·인터페이스 설정과 ODM/화이트라벨, 권한 제어 기능을
+              화면부터 Controller·Service·Repository까지 구현했습니다.
             </li>
             <li>
-              라우팅·본딩·인터페이스 설정, CIDR·넷마스크 검증, 직접 URL 접근
-              제어와 시스템 시간 변경 시 강제 로그아웃을 구현했습니다.
+              CIDR·넷마스크 검증, 직접 URL 접근 제어, 시스템 시간 변경 시 강제
+              로그아웃을 구현했습니다.
             </li>
           </ul>
 
           <h5>Tech Stack.</h5>
           <p class="stack">
-            Vue 3, Quasar, TypeScript, Kotlin, Spring Boot WebFlux
+            Vue 3, Quasar, TypeScript, Kotlin, Spring Boot WebFlux, jOOQ/R2DBC
           </p>
         </article>
       </section>
@@ -791,48 +762,36 @@
           <div class="skill-row">
             <h3>Core Frontend.</h3>
             <p>
-              TypeScript, React 17-19, Next.js 12-15, App Router, Tailwind CSS
-              v4, shadcn/Radix UI, TanStack Query, Zustand, react-hook-form, Zod
+              TypeScript, React, Next.js, App Router, Vue 3, TanStack Query,
+              Zustand, react-hook-form, Zod
             </p>
           </div>
           <div class="skill-row">
             <h3>Backend & Database.</h3>
             <p>
-              Node.js, Express, JWT, Passport, MariaDB/MySQL, Sequelize, Kysely,
-              raw SQL, InfluxDB, Redis, DB migration, Transaction, Row Lock
+              Node.js, Express, Kotlin, Spring WebFlux, JWT, MariaDB/MySQL,
+              Sequelize, Kysely, InfluxDB, Redis, DB migration
             </p>
           </div>
           <div class="skill-row">
             <h3>Security.</h3>
             <p>
               GS/CC/중국 공안 인증 대응, ISO 27001 심사 준비, AppScan/Acunetix
-              취약점 개선, server-side validation, API allowlist, RBAC, CSP,
-              security headers, TLS cipher suite, AES-256, SonarQube secure
-              coding, audit log masking
+              취약점 개선, server-side validation, API allowlist, RBAC, security
+              headers, TLS, audit log masking
             </p>
           </div>
           <div class="skill-row">
-            <h3>Visualization & Test.</h3>
+            <h3>Real-time & Quality.</h3>
             <p>
-              Highcharts, Cytoscape, sigma.js/graphology, Chart.js,
-              react-grid-layout, Playwright, BVT, E2E Test, Jest, supertest,
-              ExcelJS, Jenkins CI
+              SSE, WebSocket, HTTP/2 proxy, Highcharts, Playwright, BVT, E2E
+              Test, Jest, ExcelJS, Jenkins CI
             </p>
           </div>
         </div>
       </section>
 
-      <section aria-labelledby="collaboration">
-        <h2 id="collaboration">Collaboration.</h2>
-        <p class="note">
-          AhnLab 및 외주업체와 공동 개발하며 ODM/화이트라벨, 다국어 도움말,
-          인증서·약관, 제품별 브랜치 병합과 버전 동기화를 수행했습니다. 외부
-          조직 브랜치의 수정사항을 공통 코드베이스에 반영하면서 제품별
-          요구사항과 인증 대응 범위를 함께 관리했습니다.
-        </p>
-      </section>
-
-      <footer>Last updated: 2026.07</footer>
+      <footer>Last updated: 2026.08</footer>
     </main>
   </body>
 </html>
