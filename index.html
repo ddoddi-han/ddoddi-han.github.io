@@ -556,9 +556,9 @@
               재구축하고, 데이터 패칭·검색·테이블·폼·모달 패턴을 표준화했습니다.
             </li>
             <li>
-              WebSocket을 SSE로 전환 후 HTTP/1.1 환경에서 발생한 다중 탭 연결
-              제한 문제를 HTTP/2 edge proxy 기반 빌드·배포 구조로 전환해
-              해결했습니다.
+              WebSocket을 SSE로 전환 후 발생한 HTTP/1.1 다중 탭 연결 제한을
+              해소하고자 HTTP/2 Edge Proxy를 도입해 FE·BE 라우팅 및 배포 구조를
+              재구성했습니다.
             </li>
             <li>
               AppScan·Acunetix로 웹 취약점 점검을 통해 상 6건·중 4건의 결함을
@@ -598,9 +598,8 @@
           <h5>What did I do.</h5>
           <ul>
             <li>
-              pnpm workspace monorepo와 Shared Package를 구성해
-              프론트엔드·백엔드의 타입·상수·다국어·검증 규칙을 공통
-              관리했습니다.
+              Shared Package 기반으로 FE·BE 공통 모듈을 단일화하여 코드
+              재사용성을 극대화하고, 코드 수정 시 오버헤드를 최소화했습니다.
             </li>
             <li>
               CC인증 기준에 맞춰 JWT 기반 로그인, IP 및 권한 검증, 계정 잠금,
