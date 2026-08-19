@@ -231,6 +231,13 @@
         margin-top: 10px;
       }
 
+      .project li strong {
+        display: inline-block;
+        font-size: clamp(16px, calc(14px + 0.5vw), 17px);
+        line-height: 2;
+        margin: 4px 0 2px;
+      }
+
       .meta {
         margin-bottom: 24px;
         color: var(--subtle);
@@ -608,19 +615,23 @@
           <h5>What did I do.</h5>
           <ul>
             <li>
+              <strong>대규모 리팩토링</strong><br />
               2인 개발로 약 2개월간 레거시 콘솔을 Next.js App Router로
               재구축하고, 데이터 패칭·검색·테이블·폼·모달 패턴을 표준화했습니다.
             </li>
             <li>
+              <strong>실시간·배포 구조 개선</strong><br />
               WebSocket을 SSE로 전환 후 발생한 HTTP/1.1 다중 탭 연결 제한을
               해소하고자 HTTP/2 Edge Proxy를 도입해 FE·BE 라우팅 및 배포 구조를
               재구성했습니다.
             </li>
             <li>
+              <strong>보안 인증 대응</strong><br />
               AppScan·Acunetix로 웹 취약점 점검을 통해 상 6건·중 4건의 결함을
               모두 조치하였으며, GS인증 획득 및 중국 공안 인증에 대응했습니다.
             </li>
             <li>
+              <strong>쿼리 최적화</strong><br />
               복잡한 SQL 조회 쿼리를 CTE로 재구성하고 적절한 인덱스를 추가해
               실행 시간을 기존의 1/10로 단축했습니다.
             </li>
@@ -654,14 +665,19 @@
           <h5>What did I do.</h5>
           <ul>
             <li>
+              <strong>공통 모듈 표준화</strong><br />
               Shared Package 기반으로 FE·BE 공통 모듈을 단일화하여 코드
               재사용성을 극대화하고, 수정 오버헤드를 최소화했습니다.
             </li>
             <li>
+              <strong>보안 기반 구축</strong><br />
               CC인증 기준에 맞춰 JWT 기반 로그인, IP 및 권한 검증, 계정 잠금,
               감사 로그 등 필수 보안 기능을 구현했습니다.
             </li>
-            <li>UI/UX 반응형 디자인 구현을 전담했습니다.</li>
+            <li>
+              <strong>반응형 UI/UX</strong><br />
+              UI/UX 반응형 디자인 구현을 전담했습니다.
+            </li>
           </ul>
 
           <h5>Tech Stack.</h5>
@@ -687,15 +703,18 @@
           <h5>What did I do.</h5>
           <ul>
             <li>
+              <strong>외부 취약점 분석 연동</strong><br />
               외부 서버와 REST API로 연동해 SBOM 항목별 위험도 분석 결과를
               실시간 반영하고, 요청 실패 대응 로직을 구축해 연동 안정성을
               확보했습니다.
             </li>
             <li>
+              <strong>재검사 데이터 정합성</strong><br />
               동시 재검사 요청 시 발생할 수 있는 데이터 불일치를 방지하기 위해
               DB 트랜잭션과 Row Lock을 적용해 정합성을 보장했습니다.
             </li>
             <li>
+              <strong>위협 알림</strong><br />
               위협 탐지 시 실시간 토스트·음성 알림을 제공해 운영자의 즉각적인
               인지와 대응을 지원했습니다.
             </li>
@@ -720,11 +739,13 @@
           <h5>What did I do.</h5>
           <ul>
             <li>
+              <strong>OT DPI 정책·패킷 분석</strong><br />
               프로토콜 차단·허용 정책 설정 및 이벤트 로그 상세 조회를 구현하고,
               tshark 연동을 통해 Wireshark 수준의 패킷 상세 분석 UI와 pcap
               다운로드 기능을 제공했습니다.
             </li>
             <li>
+              <strong>XTD v3 병합·모드 전환</strong><br />
               레거시 코드의 기술 부채를 해소하고자 XTD v3 기반으로 DPS 기능을
               이식하고, 설정을 통해 XTD/DPS 모드를 전환할 수 있도록
               설계했습니다.
@@ -753,14 +774,17 @@
           <h5>What did I do.</h5>
           <ul>
             <li>
+              <strong>네트워크 설정·검증</strong><br />
               라우팅·본딩·인터페이스 설정을 구현하고, CIDR·넷마스크 검증을
               적용해 잘못된 네트워크 설정을 방지했습니다.
             </li>
             <li>
+              <strong>ODM·화이트라벨</strong><br />
               DB 플래그 기반 ODM·화이트라벨 구조를 적용해 단일 코드베이스에서
               고객사별 제품 구성을 관리했습니다.
             </li>
             <li>
+              <strong>운영·접근 보안</strong><br />
               UTC·타임존 처리와 권한 기반 URL 접근 제어를 정리하고, 시스템 시간
               변경 시 세션을 종료해 운영 안정성과 접근 보안을 보완했습니다.
             </li>
@@ -788,10 +812,12 @@
           <h5>What did I do.</h5>
           <ul>
             <li>
+              <strong>웹 성능 측정</strong><br />
               주요 화면 URL의 응답 성능을 반복 측정하고, Navigation Timing API
               지표를 Excel 리포트로 정리했습니다.
             </li>
             <li>
+              <strong>BVT E2E 자동화</strong><br />
               계정·알림·운영 로그·시스템 설정·패키지 업데이트 등 핵심 기능
               12개를 Playwright E2E 시나리오로 작성해 빌드마다 동일한 검증을
               수행할 수 있게 했습니다.
