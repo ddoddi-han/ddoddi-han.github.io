@@ -615,16 +615,16 @@
           <h5>What did I do.</h5>
           <ul>
             <li>
-              <strong>대규모 리팩토링</strong><br />
+              <strong>코드 리팩토링</strong><br />
               2인 개발로 약 2개월간 레거시 콘솔을 Next.js App Router로
-              재구축하고, 데이터 패칭·검색·테이블·폼·모달 패턴을 표준화했습니다.
+              재구축하고 데이터 패칭·검색·테이블·폼·모달 패턴을 표준화했습니다.
             </li>
-            <li>
-              <strong>실시간·배포 구조 개선</strong><br />
+            <!-- <li>
+              <strong>배포 구조 개선</strong><br />
               WebSocket을 SSE로 전환 후 발생한 HTTP/1.1 다중 탭 연결 제한을
               해소하고자 HTTP/2 Edge Proxy를 도입해 FE·BE 라우팅 및 배포 구조를
               재구성했습니다.
-            </li>
+            </li> -->
             <li>
               <strong>보안 인증 대응</strong><br />
               AppScan·Acunetix로 웹 취약점 점검을 통해 상 6건·중 4건의 결함을
@@ -632,15 +632,15 @@
             </li>
             <li>
               <strong>쿼리 최적화</strong><br />
-              복잡한 SQL 조회 쿼리를 CTE로 재구성하고 적절한 인덱스를 추가해
-              실행 시간을 기존의 1/10로 단축했습니다.
+              복잡한 조회 쿼리를 CTE로 재구성하고 적절한 인덱스를 추가해 실행
+              사간을 기존의 1/10로 단축했습니다.
             </li>
           </ul>
 
           <h5>Tech Stack.</h5>
           <p class="stack">
             TypeScript, React, Next.js, Node.js/Express, Zustand, TanStack
-            Query, MariaDB, InfluxDB, Highcharts, Tailwind CSS, Shadcn/UI, Jest
+            Query, MariaDB, InfluxDB, Highcharts, Tailwind CSS, Shadcn/UI
           </p>
         </article>
 
@@ -666,8 +666,8 @@
           <ul>
             <li>
               <strong>공통 모듈 표준화</strong><br />
-              Shared Package 기반으로 FE·BE 공통 모듈을 단일화하여 코드
-              재사용성을 극대화하고, 수정 오버헤드를 최소화했습니다.
+              FE·BE 공통 모듈을 Shared Package로 단일화해 중복 코드와 수정
+              오버헤드를 줄였습니다.
             </li>
             <li>
               <strong>보안 기반 구축</strong><br />
@@ -676,7 +676,8 @@
             </li>
             <li>
               <strong>반응형 UI/UX</strong><br />
-              UI/UX 반응형 디자인 구현을 전담했습니다.
+              데스크톱·모바일 반응형 UI/UX를 직접 설계·디자인하고, 개발 전반을
+              책임지고 수행했습니다.
             </li>
           </ul>
 
@@ -703,21 +704,20 @@
           <h5>What did I do.</h5>
           <ul>
             <li>
-              <strong>외부 취약점 분석 연동</strong><br />
-              외부 서버와 REST API로 연동해 SBOM 항목별 위험도 분석 결과를
-              실시간 반영하고, 요청 실패 대응 로직을 구축해 연동 안정성을
-              확보했습니다.
+              <strong>외부 서버 연동</strong><br />
+              외부 서버와 REST API로 CVE 분석 결과를 연동하고, 연결 테스트·토큰
+              갱신·timeout 및 요청 실패 대응을 구현했습니다.
             </li>
             <li>
-              <strong>재검사 데이터 정합성</strong><br />
-              동시 재검사 요청 시 발생할 수 있는 데이터 불일치를 방지하기 위해
-              DB 트랜잭션과 Row Lock을 적용해 정합성을 보장했습니다.
+              <strong>재검사 정합성</strong><br />
+              DB 트랜잭션과 Row Lock을 적용해 동시 요청에도 데이터 일관성을
+              보장했습니다.
             </li>
-            <li>
+            <!-- <li>
               <strong>위협 알림</strong><br />
               위협 탐지 시 실시간 토스트·음성 알림을 제공해 운영자의 즉각적인
               인지와 대응을 지원했습니다.
-            </li>
+            </li> -->
           </ul>
         </article>
 
@@ -773,11 +773,11 @@
 
           <h5>What did I do.</h5>
           <ul>
-            <li>
+            <!-- <li>
               <strong>네트워크 설정·검증</strong><br />
               라우팅·본딩·인터페이스 설정을 구현하고, CIDR·넷마스크 검증을
               적용해 잘못된 네트워크 설정을 방지했습니다.
-            </li>
+            </li> -->
             <li>
               <strong>ODM·화이트라벨</strong><br />
               DB 플래그 기반 ODM·화이트라벨 구조를 적용해 단일 코드베이스에서
@@ -785,8 +785,8 @@
             </li>
             <li>
               <strong>운영·접근 보안</strong><br />
-              UTC·타임존 처리와 권한 기반 URL 접근 제어를 정리하고, 시스템 시간
-              변경 시 세션을 종료해 운영 안정성과 접근 보안을 보완했습니다.
+              UTC·타임존 처리, 권한 기반 URL 접근 제어를 정리해 접근 안정성을
+              보완했습니다.
             </li>
           </ul>
 
@@ -818,9 +818,8 @@
             </li>
             <li>
               <strong>BVT E2E 자동화</strong><br />
-              계정·알림·운영 로그·시스템 설정·패키지 업데이트 등 핵심 기능
-              12개를 Playwright E2E 시나리오로 작성해 빌드마다 동일한 검증을
-              수행할 수 있게 했습니다.
+              계정·알림·운영 로그·시스템 설정 등 핵심 기능 12개를 Playwright E2E
+              시나리오로 작성해 빌드마다 동일하게 검증할 수 있게 했습니다.
             </li>
           </ul>
         </article>
