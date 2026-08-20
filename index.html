@@ -3,15 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content=""
-    />
+    <meta name="description" content="" />
     <meta property="og:title" content="" />
-    <meta
-      property="og:description"
-      content=""
-    />
+    <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
     <title></title>
     <link rel="stylesheet" href="./styles.css" />
@@ -34,18 +28,42 @@
               </div>
             </div>
             <div class="hero-side">
-              <div
-                class="language-switcher"
-                role="group"
-                aria-label=""
-                data-i18n-attr="aria-label:languageLabel"
-              >
-                <button type="button" data-language="ko" aria-pressed="true">
-                  한국어
+              <div class="language-switcher">
+                <button
+                  class="language-trigger"
+                  type="button"
+                  aria-expanded="false"
+                  aria-label=""
+                  data-i18n-attr="aria-label:languageLabel"
+                >
+                  <span class="globe-icon" aria-hidden="true">🌐︎</span>
                 </button>
-                <button type="button" data-language="ja" aria-pressed="false">
-                  日本語
-                </button>
+                <div class="language-options" role="menu">
+                  <button
+                    type="button"
+                    role="menuitem"
+                    data-language="ko"
+                    aria-pressed="true"
+                  >
+                    한국어
+                  </button>
+                  <button
+                    type="button"
+                    role="menuitem"
+                    data-language="ja"
+                    aria-pressed="false"
+                  >
+                    日本語
+                  </button>
+                  <button
+                    type="button"
+                    role="menuitem"
+                    data-language="en"
+                    aria-pressed="false"
+                  >
+                    English
+                  </button>
+                </div>
               </div>
               <nav
                 class="links"
@@ -148,7 +166,6 @@
               src="./assets/career-timeline-ko.svg"
               alt=""
               data-i18n-attr="alt:timelineAlt"
-              data-i18n-attr="alt:timelineAlt"
               data-i18n-image="timeline"
             />
           </figure>
@@ -161,7 +178,8 @@
               href="https://www.naonworks.com/solution/info.php?ptype=view&amp;prdcode=2306140004"
               target="_blank"
               rel="noreferrer"
-              data-i18n="xtdProduct"></a
+              data-i18n="xtdProduct"
+            ></a
             ><br />
             2022.03 ~ 2026.07
           </p>
@@ -190,7 +208,8 @@
               href="https://www.naonworks.com/solution/info.php?ptype=view&amp;prdcode=2306140001"
               target="_blank"
               rel="noreferrer"
-              data-i18n="viperProduct"></a
+              data-i18n="viperProduct"
+            ></a
             ><br />
             2025.11 ~ 2026.07
           </p>
@@ -237,7 +256,7 @@
               target="_blank"
               rel="noreferrer"
               data-i18n="dpsProduct"
-              ></a
+            ></a
             ><br />
             2024.02 - 2026.03
           </p>
@@ -259,7 +278,8 @@
               href="https://www.naonworks.com/solution/info.php?ptype=view&amp;prdcode=2306140005"
               target="_blank"
               rel="noreferrer"
-              data-i18n="ddProduct"></a
+              data-i18n="ddProduct"
+            ></a
             ><br />
             2023.11 - 2024.11
           </p>
@@ -301,6 +321,7 @@
     </main>
     <script src="./locales/ko.js"></script>
     <script src="./locales/ja.js"></script>
+    <script src="./locales/en.js"></script>
     <script src="./scripts/i18n.js"></script>
   </body>
 </html>

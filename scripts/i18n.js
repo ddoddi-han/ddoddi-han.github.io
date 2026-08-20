@@ -1,4 +1,6 @@
 const translations = window.resumeTranslations;
+const languageSwitcher = document.querySelector(".language-switcher");
+const languageTrigger = document.querySelector(".language-trigger");
 
 const translatableElements = document.querySelectorAll("[data-i18n]");
 const translatableImages = document.querySelectorAll("[data-i18n-image]");
@@ -79,7 +81,23 @@ function applyLanguage(language) {
   } catch (error) {
     // Storage may be unavailable in private browsing; the switch still works.
   }
+
+  languageSwitcher?.removeAttribute("data-open");
+  languageTrigger?.setAttribute("aria-expanded", "false");
 }
+
+languageTrigger?.addEventListener("click", () => {
+  const expanded = languageTrigger.getAttribute("aria-expanded") === "true";
+  languageTrigger.setAttribute("aria-expanded", String(!expanded));
+  languageSwitcher?.toggleAttribute("data-open", !expanded);
+});
+
+languageSwitcher?.addEventListener("focusout", (event) => {
+  if (!languageSwitcher.contains(event.relatedTarget)) {
+    languageSwitcher.removeAttribute("data-open");
+    languageTrigger?.setAttribute("aria-expanded", "false");
+  }
+});
 
 document.querySelectorAll("[data-language]").forEach((button) => {
   button.addEventListener("click", () => applyLanguage(button.dataset.language));
@@ -87,9 +105,11 @@ document.querySelectorAll("[data-language]").forEach((button) => {
 
 let savedLanguage = "ko";
 try {
-  savedLanguage = localStorage.getItem("resume-language") === "ja" ? "ja" : "ko";
+  const storedLanguage = localStorage.getItem("resume-language");
+  savedLanguage = ["ko", "ja", "en"].includes(storedLanguage)
+    ? storedLanguage
+    : "ko";
 } catch (error) {
   // Use Korean as the default when Storage is unavailable.
 }
 applyLanguage(savedLanguage);
-

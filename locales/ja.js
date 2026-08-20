@@ -22,7 +22,7 @@ window.resumeTranslations.ja = {
   githubLabel: "GitHub:",
   lead:
     "効率よく働くために、手を動かすことを惜しまない、実務経験4年半のフルスタックエンジニアです。<br />閉域環境で厳格なセキュリティ要件が求められるOTセキュリティ製品のWeb管理コンソールを開発しています。",
-  aboutHeading: "職務要約",
+  aboutHeading: "About.",
   about1:
     "React、Next.js、TypeScript、Node.jsを用いて<span class=\"highlight\">主要画面とAPI</span>を開発し、<span class=\"highlight\">DBスキーマ設計・マイグレーション</span>まで一貫して担当しました。",
   about2:
@@ -33,32 +33,32 @@ window.resumeTranslations.ja = {
     "より良い製品品質を目指し、過去プロジェクトの構造上の課題を<span class=\"highlight\">振り返り</span>、新規プロジェクトに反映。コードの保守性とチーム開発の生産性を向上させました。",
   about5:
     "GS・CC・中国公安部認証への対応、ISO 27001審査への対応、ならびにAppScan/Acunetixによる<span class=\"highlight\">Web脆弱性診断</span>を完遂し、製品のセキュリティを強化しました。",
-  skillsHeading: "技術スキル",
-  frontendHeading: "フロントエンド.",
-  backendHeading: "バックエンド・データベース.",
-  securityHeading: "セキュリティ.",
+  skillsHeading: "Skills.",
+  frontendHeading: "Frontend.",
+  backendHeading: "Backend &amp; Database.",
+  securityHeading: "Security.",
   securitySkills:
     "GS/CC/中国公安部認証対応、ISO 27001審査準備、AppScan/Acunetixによる脆弱性診断・是正",
-  testingHeading: "テスト・品質.",
-  credentialsHeading: "学歴・資格",
+  testingHeading: "Testing &amp; Quality.",
+  credentialsHeading: "Education &amp; Certifications.",
   education1: "大真大学 卒業 · 2022.02",
   education2: "中等学校正教員（2級）・情報／コンピュータ · 2022.02",
   education3: "情報処理技師（韓国） · 2024.12",
-  experienceHeading: "職務経歴",
+  experienceHeading: "Work Experience.",
   naonworksSummary:
     "NAONWORKSで閉域環境向けOTセキュリティ製品のWeb管理コンソールを開発し、成果を評価されて入社3年目に<span class=\"highlight\">早期昇進</span>しました。<br /><br />4年半にわたる開発経験を、プロジェクト別のタイムラインにまとめています。",
   xtdProduct: "OT資産セキュリティ監視ソリューション",
-  descriptionHeading: "概要.",
+  descriptionHeading: "Description.",
   xtdDescription:
     "プロジェクトの立ち上げ段階から参画し、開発・リリースまで完遂しました。現在も機能拡張および保守を継続しています。",
-  whatDidIDoHeading: "担当内容・実績.",
+  whatDidIDoHeading: "What did I do.",
   xtdWork1:
     "<strong>コードリファクタリング</strong><br />2名体制で約2か月、レガシーコンソールをNext.js App Routerへ再構築し、データフェッチ・検索・テーブル・フォーム・モーダルの実装パターンを標準化しました。",
   xtdWork2:
     "<strong>セキュリティ認証対応</strong><br />AppScan・AcunetixによるWeb脆弱性診断で高リスク6件・中リスク4件の脆弱性をすべて是正し、GS認証を取得するとともに中国公安部認証に対応しました。",
   xtdWork3:
     "<strong>クエリ最適化</strong><br />複雑な検索クエリをCTEで再構成し、適切なインデックスを追加することで、実行時間を従来の10分の1に短縮しました。",
-  techStackHeading: "技術スタック.",
+  techStackHeading: "Tech Stack.",
   viperProduct: "インターネット電話向けセキュリティソリューション",
   viperDescription:
     "XTD開発で得た課題や改善点を新規プロジェクトの初期設計に反映し、開発からリリースまで担当しました。",
