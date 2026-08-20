@@ -5,445 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="한솔지 - 게으르기 위해 부지런한 Full-Stack Engineer"
+      content=""
     />
-    <meta property="og:title" content="한솔지 | Full-Stack Engineer" />
+    <meta property="og:title" content="" />
     <meta
       property="og:description"
-      content="React·Next.js·Node.js 기반 OT/ICS·VoIP 보안 제품 웹 콘솔을 개발합니다."
+      content=""
     />
     <meta property="og:type" content="website" />
-    <title>한솔지 | Full-Stack Engineer</title>
-    <style>
-      :root {
-        --text: #241b2f;
-        --subtle: #6f647b;
-        --muted: #9a8aa9;
-        --line: #eadcf8;
-        --soft: #fbf7ff;
-        --accent: #7c3aed;
-        --accent-light: #f3edff;
-        --highlight: #d9cdfa;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        margin: 0;
-        color: var(--text);
-        background: #ffffff;
-        font-family:
-          -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
-          "Noto Sans KR", "Malgun Gothic", sans-serif;
-        font-size: 16px;
-        line-height: 1.78;
-        word-break: keep-all;
-      }
-
-      a,
-      .links .value {
-        color: var(--accent);
-        text-decoration: underline;
-        text-decoration-color: rgba(124, 58, 237, 0.28);
-        text-decoration-thickness: 1px;
-        text-underline-offset: 3px;
-      }
-
-      a:hover,
-      .links a:hover .value {
-        text-decoration-color: var(--accent);
-      }
-
-      .page {
-        width: min(100%, 820px);
-        margin: 0 auto;
-        padding: 92px 28px 88px;
-      }
-
-      header {
-        margin-bottom: 82px;
-      }
-
-      .hero-copy {
-        width: 100%;
-        max-width: 764px;
-        margin: 0 auto;
-        text-align: left;
-      }
-
-      .hero-top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 32px;
-        margin-bottom: 36px;
-      }
-
-      .identity {
-        display: flex;
-        align-items: center;
-        gap: 18px;
-        min-width: 0;
-      }
-
-      .profile-photo {
-        display: block;
-        width: 150px;
-        height: 150px;
-        flex: 0 0 150px;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-
-      .identity h1 {
-        margin-bottom: 12px;
-        font-size: 50px;
-      }
-
-      .identity h2 {
-        margin: 0;
-        color: var(--accent);
-        font-size: 19px;
-        font-weight: 600;
-        line-height: 1.35;
-      }
-
-      .hello {
-        margin: 0 0 18px;
-        color: var(--accent);
-        font-size: 18px;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      p {
-        margin-top: 0;
-      }
-
-      h1 {
-        margin-bottom: 26px;
-        font-size: 50px;
-        line-height: 1.12;
-        letter-spacing: -0.02em;
-      }
-
-      .lead {
-        margin: 0 0 34px;
-        color: #3a3a3a;
-        font-size: 16px;
-        line-height: 1.6;
-      }
-
-      .highlight {
-        color: inherit;
-        background-color: var(--highlight);
-        padding: 0 0.12em;
-        font-weight: 600;
-        border-radius: 0.15em;
-      }
-
-      .links {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-items: flex-end;
-        width: max-content;
-        color: var(--subtle);
-        font-size: 14px;
-        line-height: 1.55;
-        text-align: right;
-        white-space: nowrap;
-      }
-
-      .links a {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 58px auto;
-        column-gap: 8px;
-        align-items: baseline;
-        text-decoration: none;
-      }
-
-      .links .label {
-        color: var(--subtle);
-        font-weight: 700;
-        text-align: left;
-      }
-
-      .links .value {
-        text-align: left;
-      }
-
-      section {
-        margin-top: 88px;
-      }
-
-      h2 {
-        margin-bottom: 34px;
-        font-size: 44px;
-        line-height: 1.25;
-        letter-spacing: -0.01em;
-      }
-
-      h3 {
-        margin-bottom: 10px;
-        font-size: 30px;
-        line-height: 1.32;
-        letter-spacing: -0.01em;
-      }
-
-      h4 {
-        margin: 30px 0 10px;
-        font-size: 28px;
-        line-height: 1.6;
-      }
-
-      h5 {
-        margin: 38px 0 10px;
-        color: var(--accent);
-        font-size: 20px;
-        letter-spacing: 0.04em;
-      }
-
-      p {
-        margin-bottom: 16px;
-        font-size: 16px;
-        line-height: 1.6;
-      }
-
-      ul {
-        margin: 0;
-        padding-left: 22px;
-      }
-
-      li + li {
-        margin-top: 10px;
-      }
-
-      .project li strong {
-        display: inline-block;
-        font-size: clamp(16px, calc(14px + 0.5vw), 17px);
-        line-height: 2;
-        margin: 4px 0 2px;
-      }
-
-      .meta {
-        margin-bottom: 24px;
-        color: var(--subtle);
-        font-size: 16px;
-      }
-
-      .company {
-        padding-bottom: 42px;
-        border-bottom: 1px solid var(--line);
-      }
-
-      .project {
-        padding: 42px 0 48px;
-        border-bottom: 1px solid var(--line);
-      }
-
-      .project:first-of-type {
-        padding-top: 12px;
-      }
-
-      .project:last-child {
-        border-bottom: 0;
-      }
-
-      .summary-list {
-        display: grid;
-        gap: 18px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-
-      .summary-list li {
-        padding-left: 16px;
-        border-left: 3px solid var(--accent);
-      }
-
-      .lineage-figure {
-        margin: 18px 0 0;
-        border: 1px solid var(--line);
-        border-radius: 6px;
-        background: var(--soft);
-        overflow: hidden;
-      }
-
-      .lineage-figure img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-
-      .lineage-caption {
-        margin: 0;
-        padding: 14px 18px 16px;
-        border-top: 1px solid var(--line);
-        color: var(--subtle);
-        font-size: 14px;
-      }
-
-      .stack {
-        color: var(--subtle);
-      }
-
-      .skills {
-        display: grid;
-        gap: 22px;
-      }
-
-      .skill-row {
-        display: grid;
-        grid-template-columns: 190px 1fr;
-        gap: 20px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid var(--line);
-      }
-
-      .skill-row h3 {
-        margin: 0;
-        color: var(--accent);
-        font-size: 16px;
-      }
-
-      .skill-row p {
-        margin: 0;
-        color: var(--subtle);
-      }
-
-      footer {
-        margin-top: 86px;
-        padding-top: 24px;
-        border-top: 1px solid var(--line);
-        color: var(--muted);
-        font-size: 14px;
-        text-align: center;
-      }
-
-      @media (max-width: 720px) {
-        body {
-          font-size: 16px;
-        }
-
-        .page {
-          padding: 58px 22px 64px;
-        }
-
-        header {
-          margin-bottom: 62px;
-        }
-
-        h1 {
-          font-size: 42px;
-        }
-
-        .identity h1 {
-          font-size: 42px;
-        }
-
-        .lead {
-          font-size: 16px;
-          line-height: 1.6;
-        }
-
-        .hero-top {
-          align-items: flex-start;
-          flex-direction: column;
-          gap: 24px;
-        }
-
-        .links {
-          align-items: flex-start;
-          text-align: left;
-        }
-
-        section {
-          margin-top: 64px;
-        }
-
-        h2 {
-          margin-bottom: 26px;
-          font-size: 32px;
-        }
-
-        h3 {
-          font-size: 24px;
-        }
-
-        h4 {
-          margin-top: 30px;
-          font-size: 22px;
-        }
-
-        h5 {
-          margin-top: 24px;
-          font-size: 18px;
-        }
-
-        .project {
-          padding: 32px 0 38px;
-        }
-
-        .skill-row {
-          grid-template-columns: 1fr;
-          gap: 6px;
-        }
-      }
-
-      @media print {
-        body {
-          background: #ffffff;
-          font-size: 11px;
-          line-height: 1.45;
-        }
-
-        .page {
-          width: auto;
-          padding: 0;
-        }
-
-        header {
-          display: block;
-          margin-bottom: 32px;
-        }
-
-        h1 {
-          font-size: 32px;
-        }
-
-        h2 {
-          font-size: 20px;
-          break-after: avoid;
-        }
-
-        h3,
-        h4,
-        h5 {
-          break-after: avoid;
-        }
-
-        .project,
-        .skill-row,
-        a {
-          color: #222222;
-          border-bottom: 0;
-        }
-      }
-    </style>
+    <title></title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main class="page">
@@ -454,82 +25,76 @@
               <img
                 class="profile-photo"
                 src="./me.png"
-                alt="한솔지 프로필 사진"
+                alt=""
+                data-i18n-attr="alt:profileAlt"
               />
               <div>
-                <h1>한솔지</h1>
+                <h1 data-i18n="name"></h1>
                 <h2>Full-Stack Engineer</h2>
               </div>
             </div>
-            <nav class="links" aria-label="contact links">
-              <a href="mailto:sjhan9832@gmail.com">
-                <span class="label">Email:</span>
-                <span class="value">sjhan9832@gmail.com</span>
-              </a>
-              <a
-                href="https://hsj6660.tistory.com/"
-                target="_blank"
-                rel="noreferrer"
+            <div class="hero-side">
+              <div
+                class="language-switcher"
+                role="group"
+                aria-label=""
+                data-i18n-attr="aria-label:languageLabel"
               >
-                <span class="label">Blog:</span>
-                <span class="value">hsj6660.tistory.com</span>
-              </a>
-              <a
-                href="https://github.com/ddoddi-han"
-                target="_blank"
-                rel="noreferrer"
+                <button type="button" data-language="ko" aria-pressed="true">
+                  한국어
+                </button>
+                <button type="button" data-language="ja" aria-pressed="false">
+                  日本語
+                </button>
+              </div>
+              <nav
+                class="links"
+                aria-label=""
+                data-i18n-attr="aria-label:contactLabel"
               >
-                <span class="label">GitHub:</span>
-                <span class="value">github.com/ddoddi-han</span>
-              </a>
-            </nav>
+                <a href="mailto:sjhan9832@gmail.com">
+                  <span class="label" data-i18n="emailLabel"></span>
+                  <span class="value">sjhan9832@gmail.com</span>
+                </a>
+                <a
+                  href="https://hsj6660.tistory.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span class="label" data-i18n="blogLabel"></span>
+                  <span class="value">hsj6660.tistory.com</span>
+                </a>
+                <a
+                  href="https://github.com/ddoddi-han"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span class="label" data-i18n="githubLabel"></span>
+                  <span class="value">github.com/ddoddi-han</span>
+                </a>
+              </nav>
+            </div>
           </div>
-          <p class="lead">
-            게으르기 위해 부지런한 개발자가 되고 싶은 5년 차 풀스택
-            엔지니어입니다.<br />
-            폐쇄망 환경에서 엄격한 보안 요구사항을 충족해야 하는 OT 보안 제품의
-            웹 관리 콘솔을 개발합니다.
-          </p>
+          <p class="lead" data-i18n="lead"></p>
         </div>
       </header>
 
       <section aria-labelledby="about">
-        <h2 id="about">About.</h2>
+        <h2 id="about" data-i18n="aboutHeading"></h2>
         <ul class="summary-list">
-          <li>
-            React, Next.js, TypeScript, Node.js 기반으로
-            <span class="highlight">주요 화면과 API</span>를 개발하고,
-            <span class="highlight">DB Schema 설계 및 마이그레이션</span>까지
-            수행했습니다.
-          </li>
-          <li>
-            신규 기능 기획 시 <span class="highlight">Figma</span>로 웹 UI/UX를
-            시각화해 의사결정을 가속화하고, 화면 사전 검증으로 기획 오류를
-            보완했습니다.
-          </li>
-          <li>
-            제품 초기부터 전담 개발하여 완성도를 높여왔으며, 그 일환으로 약
-            2개월간 Next.js Pages Router를 App Router로 전면 전환하는
-            <span class="highlight">대규모 리팩토링</span>을 진행했습니다.
-          </li>
-          <li>
-            더 나은 제품 품질을 목표로 이전 프로젝트의 구조적 아쉬움을
-            <span class="highlight">회고</span>하여 신규 프로젝트에
-            반영함으로써, 코드 유지보수성과 팀 개발 생산성을 향상시켰습니다.
-          </li>
-          <li>
-            GS·CC·중국 공안 인증 및 ISO 27001 심사 대응과 AppScan/Acunetix
-            <span class="highlight">웹 취약점 점검</span>을 완수하여 제품의
-            보안을 강화했습니다.
-          </li>
+          <li data-i18n="about1"></li>
+          <li data-i18n="about2"></li>
+          <li data-i18n="about3"></li>
+          <li data-i18n="about4"></li>
+          <li data-i18n="about5"></li>
         </ul>
       </section>
 
       <section aria-labelledby="skills">
-        <h2 id="skills">Skills.</h2>
+        <h2 id="skills" data-i18n="skillsHeading"></h2>
         <div class="skills">
           <div class="skill-row">
-            <h3>Frontend.</h3>
+            <h3 data-i18n="frontendHeading"></h3>
             <p>
               TypeScript, React, Next.js, Vue 3, Quasar, Redux Toolkit, Zustand,
               TanStack Query, React Hook Form, Zod, Tailwind CSS, Shadcn/UI,
@@ -537,37 +102,34 @@
             </p>
           </div>
           <div class="skill-row">
-            <h3>Backend &amp; Database.</h3>
+            <h3 data-i18n="backendHeading"></h3>
             <p>
               Node.js, Express, Kotlin, Spring WebFlux, MariaDB/MySQL, Redis,
               InfluxDB, Kysely, Sequelize, JWT, DB Migration
             </p>
           </div>
           <div class="skill-row">
-            <h3>Security.</h3>
-            <p>
-              GS/CC/중국 공안 인증 대응, ISO 27001 심사 준비, AppScan/Acunetix
-              취약점 진단 및 조치
-            </p>
+            <h3 data-i18n="securityHeading"></h3>
+            <p data-i18n="securitySkills"></p>
           </div>
           <div class="skill-row">
-            <h3>Testing &amp; Quality.</h3>
+            <h3 data-i18n="testingHeading"></h3>
             <p>Playwright, Jest</p>
           </div>
         </div>
       </section>
 
       <section aria-labelledby="credentials">
-        <h2 id="credentials">Education &amp; Certifications.</h2>
+        <h2 id="credentials" data-i18n="credentialsHeading"></h2>
         <ul>
-          <li>대진대학교 졸업 · 2022.02</li>
-          <li>중등학교 정교사(2급) 정보·컴퓨터 · 2022.02</li>
-          <li>정보처리기사 · 2024.12</li>
+          <li data-i18n="education1"></li>
+          <li data-i18n="education2"></li>
+          <li data-i18n="education3"></li>
         </ul>
       </section>
 
       <section aria-labelledby="experience">
-        <h2 id="experience">Work Experience.</h2>
+        <h2 id="experience" data-i18n="experienceHeading"></h2>
 
         <article class="company">
           <h3>
@@ -575,21 +137,19 @@
               href="https://www.naonworks.com/"
               target="_blank"
               rel="noreferrer"
+              data-i18n="companyName"
             >
-              나온웍스.
             </a>
           </h3>
           <p class="meta">2022.01 ~ 2026.07</p>
-          <p>
-            나온웍스에서 폐쇄망 환경의 OT 보안 제품 웹 관리 콘솔을 개발하며,
-            성과를 인정받아 입사 3년 차에
-            <span class="highlight">조기 승진</span>했습니다.<br /><br />
-            4년 반의 개발 경험을 프로젝트별 타임라인으로 정리했습니다.
-          </p>
+          <p data-i18n="naonworksSummary"></p>
           <figure class="lineage-figure">
             <img
-              src="./career-timeline.svg"
-              alt="XTD v1부터 XTD v3, DPS, SMR, VIPER, DD로 이어지는 커리어 타임라인"
+              src="./assets/career-timeline-ko.svg"
+              alt=""
+              data-i18n-attr="alt:timelineAlt"
+              data-i18n-attr="alt:timelineAlt"
+              data-i18n-image="timeline"
             />
           </figure>
         </article>
@@ -601,43 +161,22 @@
               href="https://www.naonworks.com/solution/info.php?ptype=view&amp;prdcode=2306140004"
               target="_blank"
               rel="noreferrer"
-              >OT 자산 보안 모니터링 솔루션</a
+              data-i18n="xtdProduct"></a
             ><br />
             2022.03 ~ 2026.07
           </p>
 
-          <h5>Description.</h5>
-          <p>
-            프로젝트의 초기 단계부터 참여해 개발·배포를 완수하고, 현재까지 기능
-            고도화와 유지보수를 이어오고 있습니다.
-          </p>
+          <h5 data-i18n="descriptionHeading"></h5>
+          <p data-i18n="xtdDescription"></p>
 
-          <h5>What did I do.</h5>
+          <h5 data-i18n="whatDidIDoHeading"></h5>
           <ul>
-            <li>
-              <strong>코드 리팩토링</strong><br />
-              2인 개발로 약 2개월간 레거시 콘솔을 Next.js App Router로
-              재구축하고 데이터 패칭·검색·테이블·폼·모달 패턴을 표준화했습니다.
-            </li>
-            <!-- <li>
-              <strong>배포 구조 개선</strong><br />
-              WebSocket을 SSE로 전환 후 발생한 HTTP/1.1 다중 탭 연결 제한을
-              해소하고자 HTTP/2 Edge Proxy를 도입해 FE·BE 라우팅 및 배포 구조를
-              재구성했습니다.
-            </li> -->
-            <li>
-              <strong>보안 인증 대응</strong><br />
-              AppScan·Acunetix로 웹 취약점 점검을 통해 상 6건·중 4건의 결함을
-              모두 조치하였으며, GS인증 획득 및 중국 공안 인증에 대응했습니다.
-            </li>
-            <li>
-              <strong>쿼리 최적화</strong><br />
-              복잡한 조회 쿼리를 CTE로 재구성하고 적절한 인덱스를 추가해 실행
-              사간을 기존의 1/10로 단축했습니다.
-            </li>
+            <li data-i18n="xtdWork1"></li>
+            <li data-i18n="xtdWork2"></li>
+            <li data-i18n="xtdWork3"></li>
           </ul>
 
-          <h5>Tech Stack.</h5>
+          <h5 data-i18n="techStackHeading"></h5>
           <p class="stack">
             TypeScript, React, Next.js, Node.js/Express, Zustand, TanStack
             Query, MariaDB, InfluxDB, Highcharts, Tailwind CSS, Shadcn/UI
@@ -651,37 +190,22 @@
               href="https://www.naonworks.com/solution/info.php?ptype=view&amp;prdcode=2306140001"
               target="_blank"
               rel="noreferrer"
-              >인터넷전화 전용 보안 솔루션</a
+              data-i18n="viperProduct"></a
             ><br />
             2025.11 ~ 2026.07
           </p>
 
-          <h5>Description.</h5>
-          <p>
-            XTD를 개발하며 느낀 아쉬운 점들을 신규 프로젝트의 초기 설계에 반영해
-            개발·배포했습니다.
-          </p>
+          <h5 data-i18n="descriptionHeading"></h5>
+          <p data-i18n="viperDescription"></p>
 
-          <h5>What did I do.</h5>
+          <h5 data-i18n="whatDidIDoHeading"></h5>
           <ul>
-            <li>
-              <strong>공통 모듈 표준화</strong><br />
-              FE·BE 공통 모듈을 Shared Package로 단일화해 중복 코드와 수정
-              오버헤드를 줄였습니다.
-            </li>
-            <li>
-              <strong>보안 기반 구축</strong><br />
-              CC인증 기준에 맞춰 JWT 기반 로그인, IP 및 권한 검증, 계정 잠금,
-              감사 로그 등 필수 보안 기능을 구현했습니다.
-            </li>
-            <li>
-              <strong>반응형 UI/UX</strong><br />
-              데스크톱·모바일 반응형 UI/UX를 직접 설계·디자인하고, 개발 전반을
-              책임지고 수행했습니다.
-            </li>
+            <li data-i18n="viperWork1"></li>
+            <li data-i18n="viperWork2"></li>
+            <li data-i18n="viperWork3"></li>
           </ul>
 
-          <h5>Tech Stack.</h5>
+          <h5 data-i18n="techStackHeading"></h5>
           <p class="stack">
             TypeScript, React, Next.js, Node.js/Express, Zustand, TanStack
             Query, MariaDB, Kysely, Chart.js, Tailwind CSS, Shadcn/UI, Jest
@@ -691,65 +215,40 @@
         <article class="project">
           <h4>SMR.</h4>
           <p class="meta">
-            소형 원자로 보안 모니터링 솔루션<br />
+            <span data-i18n="smrProduct"></span><br />
             2025.05 ~ 2026.07
           </p>
 
-          <h5>Description.</h5>
-          <p>
-            XTD v3에서 분기한 국가과제로, 단독으로 맡아 설계부터 개발 및
-            배포까지 담당했습니다.
-          </p>
+          <h5 data-i18n="descriptionHeading"></h5>
+          <p data-i18n="smrDescription"></p>
 
-          <h5>What did I do.</h5>
+          <h5 data-i18n="whatDidIDoHeading"></h5>
           <ul>
-            <li>
-              <strong>외부 서버 연동</strong><br />
-              외부 서버와 REST API로 CVE 분석 결과를 연동하고, 연결 테스트·토큰
-              갱신·timeout 및 요청 실패 대응을 구현했습니다.
-            </li>
-            <li>
-              <strong>재검사 정합성</strong><br />
-              DB 트랜잭션과 Row Lock을 적용해 동시 요청에도 데이터 일관성을
-              보장했습니다.
-            </li>
-            <!-- <li>
-              <strong>위협 알림</strong><br />
-              위협 탐지 시 실시간 토스트·음성 알림을 제공해 운영자의 즉각적인
-              인지와 대응을 지원했습니다.
-            </li> -->
+            <li data-i18n="smrWork1"></li>
+            <li data-i18n="smrWork2"></li>
           </ul>
         </article>
 
         <article class="project">
           <h4>DPS.</h4>
           <p class="meta">
-            <a href="https://tigkorea.com/71" target="_blank" rel="noreferrer">
-              OT 전용 DPI 솔루션 </a
+            <a
+              href="https://tigkorea.com/71"
+              target="_blank"
+              rel="noreferrer"
+              data-i18n="dpsProduct"
+              ></a
             ><br />
             2024.02 - 2026.03
           </p>
 
-          <h5>Description.</h5>
-          <p>
-            레거시 XTD에서 분기한 프로젝트를 단독 개발·배포한 뒤, 이후 XTD v3로
-            병합을 준비했습니다.
-          </p>
+          <h5 data-i18n="descriptionHeading"></h5>
+          <p data-i18n="dpsDescription"></p>
 
-          <h5>What did I do.</h5>
+          <h5 data-i18n="whatDidIDoHeading"></h5>
           <ul>
-            <li>
-              <strong>OT DPI 정책·패킷 분석</strong><br />
-              프로토콜 차단·허용 정책 설정 및 이벤트 로그 상세 조회를 구현하고,
-              tshark 연동을 통해 Wireshark 수준의 패킷 상세 분석 UI와 pcap
-              다운로드 기능을 제공했습니다.
-            </li>
-            <li>
-              <strong>XTD v3 병합·모드 전환</strong><br />
-              레거시 코드의 기술 부채를 해소하고자 XTD v3 기반으로 DPS 기능을
-              이식하고, 설정을 통해 XTD/DPS 모드를 전환할 수 있도록
-              설계했습니다.
-            </li>
+            <li data-i18n="dpsWork1"></li>
+            <li data-i18n="dpsWork2"></li>
           </ul>
         </article>
 
@@ -760,37 +259,21 @@
               href="https://www.naonworks.com/solution/info.php?ptype=view&amp;prdcode=2306140005"
               target="_blank"
               rel="noreferrer"
-              >물리적 일방향 보안 솔루션</a
+              data-i18n="ddProduct"></a
             ><br />
             2023.11 - 2024.11
           </p>
 
-          <h5>Description.</h5>
-          <p>
-            처음 접하는 Vue·Kotlin 기반 프로젝트에 단기간 투입되어 기존
-            코드베이스를 빠르게 파악하고 요구사항을 완수했습니다.
-          </p>
+          <h5 data-i18n="descriptionHeading"></h5>
+          <p data-i18n="ddDescription"></p>
 
-          <h5>What did I do.</h5>
+          <h5 data-i18n="whatDidIDoHeading"></h5>
           <ul>
-            <!-- <li>
-              <strong>네트워크 설정·검증</strong><br />
-              라우팅·본딩·인터페이스 설정을 구현하고, CIDR·넷마스크 검증을
-              적용해 잘못된 네트워크 설정을 방지했습니다.
-            </li> -->
-            <li>
-              <strong>ODM·화이트라벨</strong><br />
-              DB 플래그 기반 ODM·화이트라벨 구조를 적용해 단일 코드베이스에서
-              고객사별 제품 구성을 관리했습니다.
-            </li>
-            <li>
-              <strong>운영·접근 보안</strong><br />
-              UTC·타임존 처리, 권한 기반 URL 접근 제어를 정리해 접근 안정성을
-              보완했습니다.
-            </li>
+            <li data-i18n="ddWork1"></li>
+            <li data-i18n="ddWork2"></li>
           </ul>
 
-          <h5>Tech Stack.</h5>
+          <h5 data-i18n="techStackHeading"></h5>
           <p class="stack">
             Vue 3, Quasar, TypeScript, Kotlin, Spring Boot WebFlux, jOOQ/R2DBC
           </p>
@@ -799,33 +282,25 @@
         <article class="project">
           <h4>Playwright.</h4>
           <p class="meta">
-            E2E 테스트 자동화<br />
+            <span data-i18n="playwrightProduct"></span><br />
             2025.09
           </p>
 
-          <h5>Description.</h5>
-          <p>
-            빌드 검증 테스트와 웹 응답 성능 시험을 자동화해 반복 점검을
-            줄였습니다.
-          </p>
+          <h5 data-i18n="descriptionHeading"></h5>
+          <p data-i18n="playwrightDescription"></p>
 
-          <h5>What did I do.</h5>
+          <h5 data-i18n="whatDidIDoHeading"></h5>
           <ul>
-            <li>
-              <strong>웹 성능 측정</strong><br />
-              주요 화면 URL의 응답 성능을 반복 측정하고, Navigation Timing API
-              지표를 Excel 리포트로 정리했습니다.
-            </li>
-            <li>
-              <strong>BVT E2E 자동화</strong><br />
-              계정·알림·운영 로그·시스템 설정 등 핵심 기능 12개를 Playwright E2E
-              시나리오로 작성해 빌드마다 동일하게 검증할 수 있게 했습니다.
-            </li>
+            <li data-i18n="playwrightWork1"></li>
+            <li data-i18n="playwrightWork2"></li>
           </ul>
         </article>
       </section>
 
-      <footer>Last updated: 2026.08</footer>
+      <footer data-i18n="footer"></footer>
     </main>
+    <script src="./locales/ko.js"></script>
+    <script src="./locales/ja.js"></script>
+    <script src="./scripts/i18n.js"></script>
   </body>
 </html>
