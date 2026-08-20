@@ -144,7 +144,7 @@
 
       .language-options {
         position: absolute;
-        top: calc(100% + 8px);
+        top: calc(100% + 4px);
         right: 0;
         display: flex;
         flex-direction: column;
@@ -196,10 +196,20 @@
         cursor: pointer;
       }
 
-      .language-options button:hover,
       .language-options button[aria-pressed="true"] {
         color: #ffffff;
         background: var(--accent);
+      }
+
+      .language-options button:hover {
+        color: var(--accent);
+        background: var(--accent-light);
+      }
+
+      .language-options button[aria-pressed="true"]:hover {
+        color: #ffffff;
+        background: var(--accent);
+        filter: brightness(1.2);
       }
 
       .hello {
