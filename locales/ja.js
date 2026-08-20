@@ -21,24 +21,24 @@ window.resumeTranslations.ja = {
   blogLabel: "ブログ:",
   githubLabel: "GitHub:",
   lead:
-    "効率よく働くために、手を動かすことを惜しまない、実務経験4年半のフルスタックエンジニアです。<br />閉域環境で厳格なセキュリティ要件が求められるOTセキュリティ製品のWeb管理コンソールを開発しています。",
+    "効率よく働くために、手を動かすことを惜しまない、実務経験4年半のフルスタックエンジニアです。<br />閉域網で運用され、厳格なセキュリティ要件が求められるOTセキュリティ製品のWeb管理コンソールを開発しています。",
   aboutHeading: "About.",
   about1:
     "React、Next.js、TypeScript、Node.jsを用いて<span class=\"highlight\">主要画面とAPI</span>を開発し、<span class=\"highlight\">DBスキーマ設計・マイグレーション</span>まで一貫して担当しました。",
   about2:
-    "新機能の企画時には<span class=\"highlight\">Figma</span>でWeb UI/UXを可視化し、意思決定を迅速化。画面の事前検証を通じて企画上の不備を補完しました。",
+    "新機能の企画時には<span class=\"highlight\">Figma</span>を用いてWeb UI/UXを可視化し、意思決定を迅速化しました。また、画面の事前検証を通じて企画段階の不備を早期に発見・修正しました。",
   about3:
     "製品の立ち上げ段階から専任で開発に携わり、品質を高めてきました。その一環として、約2か月かけてNext.js Pages RouterからApp Routerへ全面移行する<span class=\"highlight\">大規模リファクタリング</span>を実施しました。",
   about4:
     "より良い製品品質を目指し、過去プロジェクトの構造上の課題を<span class=\"highlight\">振り返り</span>、新規プロジェクトに反映。コードの保守性とチーム開発の生産性を向上させました。",
   about5:
-    "GS・CC・中国公安部認証への対応、ISO 27001審査への対応、ならびにAppScan/Acunetixによる<span class=\"highlight\">Web脆弱性診断</span>を完遂し、製品のセキュリティを強化しました。",
+    "GS・CC・中国公安部認証取得に向けた対応、ISO 27001審査への対応、ならびにAppScan/Acunetixによる<span class=\"highlight\">Web脆弱性診断</span>を完遂し、製品のセキュリティを強化しました。",
   skillsHeading: "Skills.",
   frontendHeading: "Frontend.",
   backendHeading: "Backend &amp; Database.",
   securityHeading: "Security.",
   securitySkills:
-    "GS/CC/中国公安部認証対応、ISO 27001審査準備、AppScan/Acunetixによる脆弱性診断・是正",
+    "GS/CC/中国公安部認証取得に向けた対応、ISO 27001審査準備、AppScan/Acunetixによる脆弱性診断・是正",
   testingHeading: "Testing &amp; Quality.",
   credentialsHeading: "Education &amp; Certifications.",
   education1: "大真大学 卒業 · 2022.02",
@@ -46,7 +46,7 @@ window.resumeTranslations.ja = {
   education3: "情報処理技師（韓国） · 2024.12",
   experienceHeading: "Work Experience.",
   naonworksSummary:
-    "NAONWORKSで閉域環境向けOTセキュリティ製品のWeb管理コンソールを開発し、成果を評価されて入社3年目に<span class=\"highlight\">早期昇進</span>しました。<br /><br />4年半にわたる開発経験を、プロジェクト別のタイムラインにまとめています。",
+    "NAONWORKSにて、閉域網で運用されるOTセキュリティ製品のWeb管理コンソールを開発し、その成果が評価され入社3年目に<span class=\"highlight\">早期昇進</span>を果たしました。<br /><br />4年半にわたる開発経験を、プロジェクト別のタイムラインにまとめています。",
   xtdProduct: "OT資産セキュリティ監視ソリューション",
   descriptionHeading: "Description.",
   xtdDescription:
@@ -55,9 +55,9 @@ window.resumeTranslations.ja = {
   xtdWork1:
     "<strong>コードリファクタリング</strong><br />2名体制で約2か月、レガシーコンソールをNext.js App Routerへ再構築し、データフェッチ・検索・テーブル・フォーム・モーダルの実装パターンを標準化しました。",
   xtdWork2:
-    "<strong>セキュリティ認証対応</strong><br />AppScan・AcunetixによるWeb脆弱性診断で高リスク6件・中リスク4件の脆弱性をすべて是正し、GS認証を取得するとともに中国公安部認証に対応しました。",
+    "<strong>セキュリティ認証対応</strong><br />AppScan・AcunetixによるWeb脆弱性診断で高リスク6件・中リスク4件の脆弱性をすべて是正し、GS認証を取得するとともに中国公安部認証取得に向けた対応を行いました。",
   xtdWork3:
-    "<strong>クエリ最適化</strong><br />複雑な検索クエリをCTEで再構成し、適切なインデックスを追加することで、実行時間を従来の10分の1に短縮しました。",
+    "<strong>クエリ最適化</strong><br />複雑な検索クエリをCTEで再構成し、適切なインデックスを追加することで、クエリの実行時間を従来の10分の1に短縮しました。",
   techStackHeading: "Tech Stack.",
   viperProduct: "インターネット電話向けセキュリティソリューション",
   viperDescription:
@@ -72,14 +72,14 @@ window.resumeTranslations.ja = {
   smrDescription:
     "XTD v3から派生した国家プロジェクトとして、単独で設計から開発・リリースまで担当しました。",
   smrWork1:
-    "<strong>外部サーバー連携</strong><br />外部サーバーとREST APIでCVE分析結果を連携し、接続テスト、トークン更新、タイムアウト・リクエスト失敗への対応を実装しました。",
+    "<strong>外部サーバー連携</strong><br />外部サーバーとREST APIを連携してCVE分析結果を取得・反映し、疎通テスト、トークン更新、タイムアウトおよびリクエスト失敗に対する例外処理を実装しました。",
   smrWork2:
     "<strong>再スキャン時の整合性確保</strong><br />DBトランザクションとRow Lockを適用し、同時リクエストが発生した場合にもデータの一貫性を保証しました。",
   dpsProduct: "OT向けDPIソリューション",
   dpsDescription:
     "レガシーXTDから派生したプロジェクトを単独で開発・リリースした後、XTD v3への統合を準備しました。",
   dpsWork1:
-    "<strong>OT DPIポリシー・パケット分析</strong><br />プロトコルのブロック・許可ポリシー設定とイベントログの詳細表示を実装。tsharkと連携し、Wireshark相当のパケット詳細分析UIとpcapダウンロード機能を提供しました。",
+    "<strong>OT DPIポリシー・パケット分析</strong><br />プロトコルの遮断・許可ポリシー設定およびイベントログの詳細表示機能を実装しました。また、tsharkと連携し、Wireshark相当のパケット詳細解析UIとpcapファイルのダウンロード機能を提供しました。",
   dpsWork2:
     "<strong>XTD v3への統合・モード切り替え</strong><br />レガシーコードの技術的負債を解消するため、XTD v3をベースにDPS機能を移植。設定によりXTD/DPSモードを切り替えられるよう設計しました。",
   ddProduct: "物理的な一方向セキュリティソリューション",
@@ -88,7 +88,7 @@ window.resumeTranslations.ja = {
   ddWork1:
     "<strong>ODM・ホワイトラベル</strong><br />DBフラグを利用したODM・ホワイトラベル構成を適用し、単一のコードベースで顧客ごとの製品構成を管理できるようにしました。",
   ddWork2:
-    "<strong>運用・アクセスセキュリティ</strong><br />UTC・タイムゾーンの扱いと権限ベースのURLアクセス制御を整理し、アクセスの安定性を改善しました。",
+    "<strong>運用・アクセスセキュリティ</strong><br />UTCおよびタイムゾーンの処理方式を統一し、権限に基づくURLアクセス制御を整理することで、アクセスの安定性を向上させました。",
   playwrightProduct: "E2Eテスト自動化",
   playwrightDescription:
     "ビルド検証テストとWebレスポンス性能試験を自動化し、繰り返し発生する確認作業を削減しました。",

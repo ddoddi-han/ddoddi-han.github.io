@@ -75,11 +75,11 @@
 
     <rect x="350" y="360" width="160" height="64" rx="12" fill="#faf5ff" stroke="#d8b4fe" />
     <text x="430" y="387" text-anchor="middle" fill="#241b2f" font-size="18" font-weight="800">DPS</text>
-    <text x="430" y="407" text-anchor="middle" fill="#7e7190" font-size="14">2024.02 – 2026.03</text>
+    <text x="430" y="407" text-anchor="middle" fill="#7e7190" font-size="14">2024.02 ~ 2026.03</text>
 
     <rect x="538" y="312" width="144" height="56" rx="12" fill="#fff7ed" stroke="#fed7aa" />
     <text x="610" y="335" text-anchor="middle" fill="#241b2f" font-size="18" font-weight="800">DD</text>
-    <text x="610" y="353" text-anchor="middle" fill="#9a6b33" font-size="14">2023.11 – 2024.11</text>
+    <text x="610" y="353" text-anchor="middle" fill="#9a6b33" font-size="14">2023.11 ~ 2024.11</text>
 
     <rect x="702" y="573" width="176" height="64" rx="12" fill="#faf5ff" stroke="#d8b4fe" />
     <text x="790" y="599" text-anchor="middle" fill="#241b2f" font-size="18" font-weight="800">SMR</text>
