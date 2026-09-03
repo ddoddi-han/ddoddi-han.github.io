@@ -4,6 +4,12 @@ const languageTrigger = document.querySelector(".language-trigger");
 
 const translatableElements = document.querySelectorAll("[data-i18n]");
 const translatableImages = document.querySelectorAll("[data-i18n-image]");
+const naonworksLinks = document.querySelectorAll("[data-naonworks-path]");
+const naonworksBases = {
+  ko: "https://www.naonworks.com/",
+  ja: "https://www.naonworks.com/jpn/",
+  en: "https://www.naonworks.com/eng/",
+};
 const originalContent = new Map();
 translatableElements.forEach((element) => {
   const key = element.dataset.i18n;
@@ -28,6 +34,11 @@ translatableAttributes.forEach((element) => {
 
 function applyLanguage(language) {
   const activeTranslations = translations[language] || translations.ko;
+  const naonworksBase = naonworksBases[language] || naonworksBases.ko;
+
+  naonworksLinks.forEach((link) => {
+    link.href = `${naonworksBase}${link.dataset.naonworksPath}`;
+  });
 
   translatableElements.forEach((element) => {
     const key = element.dataset.i18n;
